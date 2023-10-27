@@ -44,3 +44,8 @@ For the experiments with path dependent counterfactual fairness, you need to add
 
 ******************************************************************************
 The detailed experiment results are stored in ```CF Data Record.xlsx```. You can also find the comman (including the random seed) used to get the results.
+
+To get the Figure 5 and 9 shown in the paper, run
+```sh
+python3 draw.py
+```
