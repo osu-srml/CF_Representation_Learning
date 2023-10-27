@@ -1,0 +1,7 @@
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=True, multi_u=False, run=6, gpu=0, normalize=False, dataset='UCI', retrain=False, path=True, path_attribute='1', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=6, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/DCEVAE/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_6_use_label_True')
+accuracy of LR  train -->    test: 0.8180
+(factual) chi squared distance is: 0.0000
+(counter) chi squared distance is: 0.0109
+(whole) chi squared distance is: 0.0023
+accuracy of LR  whole -->    real: 0.8162
+accuracy of logistic regression -->    0.7958

@@ -1,0 +1,2943 @@
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Epoch 0
+###Train###
+BCE(x): 6.3508
+BCE(y): 0.5790
+KL(u): 0.1163
+VAE tc: -1.4747
+D tc: 0.9851
+fair_loss: 0.0229
+predict(y) accuracy: 0.7599
+cf: -0.0226
+
+###Valid###
+BCE(x): 6.0947
+BCE(y): 0.5591
+KL(s): 0.0269
+vae tc: -2.1732
+D tc_loss: 1.2001
+fair_loss: 0.0159
+***data***
+cf: -0.0149
+o1: -0.01623438
+o2: -0.01532145
+o3: -0.01502546
+o4: -0.01479825
+Epoch 1
+###Train###
+BCE(x): 5.9253
+BCE(y): 0.5561
+KL(u): 0.0307
+VAE tc: -2.1870
+D tc: 1.2039
+fair_loss: 0.0103
+predict(y) accuracy: 0.7600
+cf: -0.0058
+
+###Valid###
+BCE(x): 5.7909
+BCE(y): 0.5447
+KL(s): 0.0346
+vae tc: -2.1970
+D tc_loss: 1.2071
+fair_loss: 0.0078
+***data***
+cf: 0.0013
+o1: 0.00058877
+o2: 0.00071745
+o3: 0.00158102
+o4: 0.00133933
+Epoch 2
+###Train###
+BCE(x): 5.6893
+BCE(y): 0.5456
+KL(u): 0.0383
+VAE tc: -2.1957
+D tc: 1.2059
+fair_loss: 0.0086
+predict(y) accuracy: 0.7600
+cf: 0.0052
+
+###Valid###
+BCE(x): 5.6164
+BCE(y): 0.5353
+KL(s): 0.0425
+vae tc: -2.1909
+D tc_loss: 1.2033
+fair_loss: 0.0098
+***data***
+cf: 0.0082
+o1: 0.00678233
+o2: 0.00803993
+o3: 0.00776352
+o4: 0.00834999
+Epoch 3
+###Train###
+BCE(x): 5.5579
+BCE(y): 0.5402
+KL(u): 0.0458
+VAE tc: -2.1943
+D tc: 1.2042
+fair_loss: 0.0114
+predict(y) accuracy: 0.7600
+cf: 0.0106
+
+###Valid###
+BCE(x): 5.5221
+BCE(y): 0.5316
+KL(s): 0.0504
+vae tc: -2.1947
+D tc_loss: 1.2040
+fair_loss: 0.0130
+***data***
+cf: 0.0125
+o1: 0.01161608
+o2: 0.01171058
+o3: 0.01250232
+o4: 0.01267166
+Epoch 4
+###Train###
+BCE(x): 5.4764
+BCE(y): 0.5352
+KL(u): 0.0555
+VAE tc: -2.1962
+D tc: 1.2044
+fair_loss: 0.0142
+predict(y) accuracy: 0.7600
+cf: 0.0139
+
+###Valid###
+BCE(x): 5.4520
+BCE(y): 0.5253
+KL(s): 0.0609
+vae tc: -2.1927
+D tc_loss: 1.2028
+fair_loss: 0.0151
+***data***
+cf: 0.0149
+o1: 0.01466851
+o2: 0.01382789
+o3: 0.01448690
+o4: 0.01507498
+Epoch 5
+###Train###
+BCE(x): 5.4156
+BCE(y): 0.5270
+KL(u): 0.0675
+VAE tc: -2.1975
+D tc: 1.2047
+fair_loss: 0.0161
+predict(y) accuracy: 0.7600
+cf: 0.0159
+
+###Valid###
+BCE(x): 5.4055
+BCE(y): 0.5191
+KL(s): 0.0746
+vae tc: -2.2002
+D tc_loss: 1.2056
+fair_loss: 0.0174
+***data***
+cf: 0.0174
+o1: 0.01798781
+o2: 0.01599573
+o3: 0.01702629
+o4: 0.01757345
+Epoch 6
+###Train###
+BCE(x): 5.3645
+BCE(y): 0.5180
+KL(u): 0.0865
+VAE tc: -2.1979
+D tc: 1.2047
+fair_loss: 0.0182
+predict(y) accuracy: 0.7601
+cf: 0.0182
+
+###Valid###
+BCE(x): 5.3559
+BCE(y): 0.5074
+KL(s): 0.0982
+vae tc: -2.1976
+D tc_loss: 1.2045
+fair_loss: 0.0187
+***data***
+cf: 0.0186
+o1: 0.01762787
+o2: 0.01630541
+o3: 0.01853091
+o4: 0.01902573
+Epoch 7
+###Train###
+BCE(x): 5.3074
+BCE(y): 0.5042
+KL(u): 0.1121
+VAE tc: -2.1975
+D tc: 1.2044
+fair_loss: 0.0197
+predict(y) accuracy: 0.7624
+cf: 0.0197
+
+###Valid###
+BCE(x): 5.2904
+BCE(y): 0.4935
+KL(s): 0.1254
+vae tc: -2.1938
+D tc_loss: 1.2028
+fair_loss: 0.0200
+***data***
+cf: 0.0200
+o1: 0.01895174
+o2: 0.01719149
+o3: 0.01830356
+o4: 0.02053989
+Epoch 8
+###Train###
+BCE(x): 5.2466
+BCE(y): 0.4893
+KL(u): 0.1474
+VAE tc: -2.1972
+D tc: 1.2042
+fair_loss: 0.0205
+predict(y) accuracy: 0.7677
+cf: 0.0204
+
+###Valid###
+BCE(x): 5.2196
+BCE(y): 0.4726
+KL(s): 0.1650
+vae tc: -2.1923
+D tc_loss: 1.2022
+fair_loss: 0.0218
+***data***
+cf: 0.0218
+o1: 0.02186936
+o2: 0.01865380
+o3: 0.02015215
+o4: 0.02232711
+Epoch 9
+###Train###
+BCE(x): 5.1704
+BCE(y): 0.4690
+KL(u): 0.1868
+VAE tc: -2.1960
+D tc: 1.2036
+fair_loss: 0.0217
+predict(y) accuracy: 0.7764
+cf: 0.0216
+
+###Valid###
+BCE(x): 5.1559
+BCE(y): 0.4604
+KL(s): 0.2093
+vae tc: -2.2027
+D tc_loss: 1.2063
+fair_loss: 0.0219
+***data***
+cf: 0.0217
+o1: 0.02132927
+o2: 0.01801670
+o3: 0.02041417
+o4: 0.02236050
+Epoch 10
+###Train###
+BCE(x): 5.0993
+BCE(y): 0.4515
+KL(u): 0.2326
+VAE tc: -2.1969
+D tc: 1.2040
+fair_loss: 0.0223
+predict(y) accuracy: 0.7863
+cf: 0.0221
+
+###Valid###
+BCE(x): 5.0818
+BCE(y): 0.4388
+KL(s): 0.2532
+vae tc: -2.1950
+D tc_loss: 1.2032
+fair_loss: 0.0229
+***data***
+cf: 0.0227
+o1: 0.02088649
+o2: 0.01879137
+o3: 0.02160865
+o4: 0.02337127
+Epoch 11
+###Train###
+BCE(x): 5.0357
+BCE(y): 0.4378
+KL(u): 0.2779
+VAE tc: -2.1963
+D tc: 1.2036
+fair_loss: 0.0231
+predict(y) accuracy: 0.7957
+cf: 0.0228
+
+###Valid###
+BCE(x): 5.0165
+BCE(y): 0.4254
+KL(s): 0.2912
+vae tc: -2.1973
+D tc_loss: 1.2040
+fair_loss: 0.0228
+***data***
+cf: 0.0224
+o1: 0.02306000
+o2: 0.01814201
+o3: 0.02051557
+o4: 0.02315966
+Epoch 12
+###Train###
+BCE(x): 4.9691
+BCE(y): 0.4232
+KL(u): 0.3170
+VAE tc: -2.1962
+D tc: 1.2036
+fair_loss: 0.0232
+predict(y) accuracy: 0.8038
+cf: 0.0228
+
+###Valid###
+BCE(x): 4.9550
+BCE(y): 0.4207
+KL(s): 0.3362
+vae tc: -2.1951
+D tc_loss: 1.2032
+fair_loss: 0.0230
+***data***
+cf: 0.0226
+o1: 0.02223560
+o2: 0.01775696
+o3: 0.02067690
+o4: 0.02344891
+Epoch 13
+###Train###
+BCE(x): 4.9098
+BCE(y): 0.4138
+KL(u): 0.3528
+VAE tc: -2.1953
+D tc: 1.2031
+fair_loss: 0.0231
+predict(y) accuracy: 0.8109
+cf: 0.0226
+
+###Valid###
+BCE(x): 4.9052
+BCE(y): 0.4144
+KL(s): 0.3752
+vae tc: -2.1921
+D tc_loss: 1.2018
+fair_loss: 0.0243
+***data***
+cf: 0.0239
+o1: 0.02344193
+o2: 0.01915649
+o3: 0.02097078
+o4: 0.02481450
+Epoch 14
+###Train###
+BCE(x): 4.8582
+BCE(y): 0.4062
+KL(u): 0.3927
+VAE tc: -2.1949
+D tc: 1.2030
+fair_loss: 0.0242
+predict(y) accuracy: 0.8139
+cf: 0.0238
+
+###Valid###
+BCE(x): 4.8498
+BCE(y): 0.4034
+KL(s): 0.4159
+vae tc: -2.1940
+D tc_loss: 1.2026
+fair_loss: 0.0239
+***data***
+cf: 0.0235
+o1: 0.02311571
+o2: 0.01804656
+o3: 0.02149131
+o4: 0.02451049
+Epoch 15
+###Train###
+BCE(x): 4.8031
+BCE(y): 0.3985
+KL(u): 0.4261
+VAE tc: -2.1943
+D tc: 1.2027
+fair_loss: 0.0243
+predict(y) accuracy: 0.8171
+cf: 0.0239
+
+###Valid###
+BCE(x): 4.8034
+BCE(y): 0.3973
+KL(s): 0.4410
+vae tc: -2.1903
+D tc_loss: 1.2012
+fair_loss: 0.0248
+***data***
+cf: 0.0244
+o1: 0.02394821
+o2: 0.01994671
+o3: 0.02133635
+o4: 0.02537787
+Epoch 16
+###Train###
+BCE(x): 4.7533
+BCE(y): 0.3910
+KL(u): 0.4590
+VAE tc: -2.1951
+D tc: 1.2030
+fair_loss: 0.0244
+predict(y) accuracy: 0.8224
+cf: 0.0240
+
+###Valid###
+BCE(x): 4.7509
+BCE(y): 0.3911
+KL(s): 0.4730
+vae tc: -2.1945
+D tc_loss: 1.2029
+fair_loss: 0.0246
+***data***
+cf: 0.0243
+o1: 0.02440423
+o2: 0.01949478
+o3: 0.02271974
+o4: 0.02505264
+Epoch 17
+###Train###
+BCE(x): 4.7042
+BCE(y): 0.3833
+KL(u): 0.4940
+VAE tc: -2.1955
+D tc: 1.2032
+fair_loss: 0.0252
+predict(y) accuracy: 0.8263
+cf: 0.0249
+
+###Valid###
+BCE(x): 4.6981
+BCE(y): 0.3830
+KL(s): 0.5135
+vae tc: -2.1959
+D tc_loss: 1.2034
+fair_loss: 0.0249
+***data***
+cf: 0.0246
+o1: 0.02453846
+o2: 0.01948424
+o3: 0.02366533
+o4: 0.02545394
+Epoch 18
+###Train###
+BCE(x): 4.6524
+BCE(y): 0.3785
+KL(u): 0.5288
+VAE tc: -2.1950
+D tc: 1.2030
+fair_loss: 0.0252
+predict(y) accuracy: 0.8297
+cf: 0.0250
+
+###Valid###
+BCE(x): 4.6551
+BCE(y): 0.3758
+KL(s): 0.5421
+vae tc: -2.1937
+D tc_loss: 1.2024
+fair_loss: 0.0265
+***data***
+cf: 0.0263
+o1: 0.02511509
+o2: 0.02130257
+o3: 0.02491784
+o4: 0.02721188
+Epoch 19
+###Train###
+BCE(x): 4.6137
+BCE(y): 0.3733
+KL(u): 0.5565
+VAE tc: -2.1945
+D tc: 1.2028
+fair_loss: 0.0268
+predict(y) accuracy: 0.8310
+cf: 0.0266
+
+###Valid###
+BCE(x): 4.5840
+BCE(y): 0.3642
+KL(s): 0.5835
+vae tc: -2.1939
+D tc_loss: 1.2026
+fair_loss: 0.0257
+***data***
+cf: 0.0254
+o1: 0.02690339
+o2: 0.01943706
+o3: 0.02295054
+o4: 0.02643730
+Epoch 20
+###Train###
+BCE(x): 4.5627
+BCE(y): 0.3638
+KL(u): 0.5857
+VAE tc: -2.1950
+D tc: 1.2030
+fair_loss: 0.0264
+predict(y) accuracy: 0.8362
+cf: 0.0262
+
+###Valid###
+BCE(x): 4.5568
+BCE(y): 0.3549
+KL(s): 0.6020
+vae tc: -2.1922
+D tc_loss: 1.2019
+fair_loss: 0.0271
+***data***
+cf: 0.0269
+o1: 0.02688649
+o2: 0.02065751
+o3: 0.02369445
+o4: 0.02802977
+Epoch 21
+###Train###
+BCE(x): 4.5202
+BCE(y): 0.3553
+KL(u): 0.6150
+VAE tc: -2.1946
+D tc: 1.2028
+fair_loss: 0.0273
+predict(y) accuracy: 0.8421
+cf: 0.0271
+
+###Valid###
+BCE(x): 4.5314
+BCE(y): 0.3617
+KL(s): 0.6330
+vae tc: -2.1958
+D tc_loss: 1.2033
+fair_loss: 0.0275
+***data***
+cf: 0.0273
+o1: 0.02691180
+o2: 0.02082862
+o3: 0.02434927
+o4: 0.02845350
+Epoch 22
+###Train###
+BCE(x): 4.4839
+BCE(y): 0.3514
+KL(u): 0.6402
+VAE tc: -2.1954
+D tc: 1.2032
+fair_loss: 0.0273
+predict(y) accuracy: 0.8443
+cf: 0.0271
+
+###Valid###
+BCE(x): 4.5035
+BCE(y): 0.3543
+KL(s): 0.6506
+vae tc: -2.1920
+D tc_loss: 1.2018
+fair_loss: 0.0271
+***data***
+cf: 0.0269
+o1: 0.02742328
+o2: 0.02200383
+o3: 0.02404598
+o4: 0.02779537
+Epoch 23
+###Train###
+BCE(x): 4.4498
+BCE(y): 0.3450
+KL(u): 0.6665
+VAE tc: -2.1950
+D tc: 1.2030
+fair_loss: 0.0274
+predict(y) accuracy: 0.8471
+cf: 0.0272
+
+###Valid###
+BCE(x): 4.4661
+BCE(y): 0.3533
+KL(s): 0.6760
+vae tc: -2.2022
+D tc_loss: 1.2059
+fair_loss: 0.0278
+***data***
+cf: 0.0276
+o1: 0.02822545
+o2: 0.02150099
+o3: 0.02467641
+o4: 0.02867775
+Epoch 24
+###Train###
+BCE(x): 4.4189
+BCE(y): 0.3425
+KL(u): 0.6877
+VAE tc: -2.1949
+D tc: 1.2029
+fair_loss: 0.0276
+predict(y) accuracy: 0.8490
+cf: 0.0274
+
+###Valid###
+BCE(x): 4.4196
+BCE(y): 0.3455
+KL(s): 0.6906
+vae tc: -2.2009
+D tc_loss: 1.2054
+fair_loss: 0.0280
+***data***
+cf: 0.0278
+o1: 0.02965589
+o2: 0.02138167
+o3: 0.02559355
+o4: 0.02881241
+Epoch 25
+###Train###
+BCE(x): 4.3894
+BCE(y): 0.3389
+KL(u): 0.7031
+VAE tc: -2.1946
+D tc: 1.2028
+fair_loss: 0.0276
+predict(y) accuracy: 0.8510
+cf: 0.0274
+
+###Valid###
+BCE(x): 4.3985
+BCE(y): 0.3421
+KL(s): 0.7245
+vae tc: -2.1941
+D tc_loss: 1.2026
+fair_loss: 0.0272
+***data***
+cf: 0.0270
+o1: 0.02783054
+o2: 0.02132868
+o3: 0.02420515
+o4: 0.02794548
+Epoch 26
+###Train###
+BCE(x): 4.3658
+BCE(y): 0.3362
+KL(u): 0.7248
+VAE tc: -2.1948
+D tc: 1.2029
+fair_loss: 0.0277
+predict(y) accuracy: 0.8536
+cf: 0.0275
+
+###Valid###
+BCE(x): 4.3616
+BCE(y): 0.3269
+KL(s): 0.7489
+vae tc: -2.1918
+D tc_loss: 1.2018
+fair_loss: 0.0276
+***data***
+cf: 0.0274
+o1: 0.02881512
+o2: 0.02202486
+o3: 0.02467271
+o4: 0.02838528
+Epoch 27
+###Train###
+BCE(x): 4.3438
+BCE(y): 0.3348
+KL(u): 0.7440
+VAE tc: -2.1948
+D tc: 1.2028
+fair_loss: 0.0278
+predict(y) accuracy: 0.8520
+cf: 0.0276
+
+###Valid###
+BCE(x): 4.3360
+BCE(y): 0.3352
+KL(s): 0.7636
+vae tc: -2.1896
+D tc_loss: 1.2008
+fair_loss: 0.0275
+***data***
+cf: 0.0273
+o1: 0.02906729
+o2: 0.02239984
+o3: 0.02410809
+o4: 0.02816657
+Epoch 28
+###Train###
+BCE(x): 4.3186
+BCE(y): 0.3295
+KL(u): 0.7576
+VAE tc: -2.1945
+D tc: 1.2026
+fair_loss: 0.0277
+predict(y) accuracy: 0.8583
+cf: 0.0276
+
+###Valid###
+BCE(x): 4.3214
+BCE(y): 0.3246
+KL(s): 0.7821
+vae tc: -2.1977
+D tc_loss: 1.2040
+fair_loss: 0.0272
+***data***
+cf: 0.0269
+o1: 0.02832885
+o2: 0.02086953
+o3: 0.02351067
+o4: 0.02803782
+Epoch 29
+###Train###
+BCE(x): 4.3054
+BCE(y): 0.3272
+KL(u): 0.7800
+VAE tc: -2.1943
+D tc: 1.2026
+fair_loss: 0.0276
+predict(y) accuracy: 0.8586
+cf: 0.0274
+
+###Valid###
+BCE(x): 4.3278
+BCE(y): 0.3297
+KL(s): 0.7756
+vae tc: -2.2001
+D tc_loss: 1.2050
+fair_loss: 0.0282
+***data***
+cf: 0.0280
+o1: 0.02830237
+o2: 0.02237192
+o3: 0.02481696
+o4: 0.02910745
+Epoch 30
+###Train###
+BCE(x): 4.2850
+BCE(y): 0.3275
+KL(u): 0.7853
+VAE tc: -2.1946
+D tc: 1.2027
+fair_loss: 0.0283
+predict(y) accuracy: 0.8561
+cf: 0.0282
+
+###Valid###
+BCE(x): 4.3047
+BCE(y): 0.3243
+KL(s): 0.7953
+vae tc: -2.1951
+D tc_loss: 1.2030
+fair_loss: 0.0291
+***data***
+cf: 0.0290
+o1: 0.03053353
+o2: 0.02366163
+o3: 0.02712928
+o4: 0.02983665
+Epoch 31
+###Train###
+BCE(x): 4.2712
+BCE(y): 0.3263
+KL(u): 0.7972
+VAE tc: -2.1943
+D tc: 1.2026
+fair_loss: 0.0284
+predict(y) accuracy: 0.8574
+cf: 0.0283
+
+###Valid###
+BCE(x): 4.2817
+BCE(y): 0.3294
+KL(s): 0.8079
+vae tc: -2.1982
+D tc_loss: 1.2043
+fair_loss: 0.0275
+***data***
+cf: 0.0274
+o1: 0.02824630
+o2: 0.02188122
+o3: 0.02505344
+o4: 0.02832991
+Epoch 32
+###Train###
+BCE(x): 4.2600
+BCE(y): 0.3235
+KL(u): 0.8150
+VAE tc: -2.1942
+D tc: 1.2026
+fair_loss: 0.0284
+predict(y) accuracy: 0.8602
+cf: 0.0283
+
+###Valid###
+BCE(x): 4.2688
+BCE(y): 0.3280
+KL(s): 0.8240
+vae tc: -2.1915
+D tc_loss: 1.2016
+fair_loss: 0.0289
+***data***
+cf: 0.0288
+o1: 0.02930334
+o2: 0.02277442
+o3: 0.02589322
+o4: 0.02990988
+Epoch 33
+###Train###
+BCE(x): 4.2478
+BCE(y): 0.3249
+KL(u): 0.8194
+VAE tc: -2.1950
+D tc: 1.2029
+fair_loss: 0.0292
+predict(y) accuracy: 0.8584
+cf: 0.0291
+
+###Valid###
+BCE(x): 4.2628
+BCE(y): 0.3261
+KL(s): 0.8331
+vae tc: -2.1945
+D tc_loss: 1.2028
+fair_loss: 0.0304
+***data***
+cf: 0.0303
+o1: 0.03134562
+o2: 0.02314831
+o3: 0.02839847
+o4: 0.03145688
+Epoch 34
+###Train###
+BCE(x): 4.2301
+BCE(y): 0.3233
+KL(u): 0.8314
+VAE tc: -2.1945
+D tc: 1.2027
+fair_loss: 0.0295
+predict(y) accuracy: 0.8620
+cf: 0.0294
+
+###Valid###
+BCE(x): 4.2425
+BCE(y): 0.3293
+KL(s): 0.8426
+vae tc: -2.1958
+D tc_loss: 1.2033
+fair_loss: 0.0289
+***data***
+cf: 0.0289
+o1: 0.03082667
+o2: 0.02246945
+o3: 0.02824029
+o4: 0.02972841
+Epoch 35
+###Train###
+BCE(x): 4.2221
+BCE(y): 0.3215
+KL(u): 0.8409
+VAE tc: -2.1951
+D tc: 1.2030
+fair_loss: 0.0297
+predict(y) accuracy: 0.8602
+cf: 0.0297
+
+###Valid###
+BCE(x): 4.2131
+BCE(y): 0.3184
+KL(s): 0.8745
+vae tc: -2.1981
+D tc_loss: 1.2042
+fair_loss: 0.0303
+***data***
+cf: 0.0303
+o1: 0.03255099
+o2: 0.02423148
+o3: 0.02804321
+o4: 0.03128275
+Epoch 36
+###Train###
+BCE(x): 4.2122
+BCE(y): 0.3243
+KL(u): 0.8544
+VAE tc: -2.1949
+D tc: 1.2029
+fair_loss: 0.0303
+predict(y) accuracy: 0.8590
+cf: 0.0303
+
+###Valid###
+BCE(x): 4.2223
+BCE(y): 0.3192
+KL(s): 0.8499
+vae tc: -2.2008
+D tc_loss: 1.2052
+fair_loss: 0.0311
+***data***
+cf: 0.0311
+o1: 0.03345539
+o2: 0.02517400
+o3: 0.02714783
+o4: 0.03211476
+Epoch 37
+###Train###
+BCE(x): 4.1980
+BCE(y): 0.3172
+KL(u): 0.8563
+VAE tc: -2.1940
+D tc: 1.2024
+fair_loss: 0.0304
+predict(y) accuracy: 0.8629
+cf: 0.0304
+
+###Valid###
+BCE(x): 4.2211
+BCE(y): 0.3256
+KL(s): 0.8621
+vae tc: -2.1956
+D tc_loss: 1.2033
+fair_loss: 0.0307
+***data***
+cf: 0.0307
+o1: 0.03233971
+o2: 0.02449680
+o3: 0.02546996
+o4: 0.03201283
+Epoch 38
+###Train###
+BCE(x): 4.1873
+BCE(y): 0.3200
+KL(u): 0.8631
+VAE tc: -2.1947
+D tc: 1.2028
+fair_loss: 0.0306
+predict(y) accuracy: 0.8617
+cf: 0.0306
+
+###Valid###
+BCE(x): 4.2328
+BCE(y): 0.3259
+KL(s): 0.8628
+vae tc: -2.1973
+D tc_loss: 1.2038
+fair_loss: 0.0312
+***data***
+cf: 0.0312
+o1: 0.03528880
+o2: 0.02718093
+o3: 0.02853873
+o4: 0.03178026
+Epoch 39
+###Train###
+BCE(x): 4.1884
+BCE(y): 0.3190
+KL(u): 0.8766
+VAE tc: -2.1947
+D tc: 1.2028
+fair_loss: 0.0313
+predict(y) accuracy: 0.8613
+cf: 0.0313
+
+###Valid###
+BCE(x): 4.1667
+BCE(y): 0.3091
+KL(s): 0.9112
+vae tc: -2.1925
+D tc_loss: 1.2020
+fair_loss: 0.0315
+***data***
+cf: 0.0315
+o1: 0.03220506
+o2: 0.02618789
+o3: 0.02747796
+o4: 0.03256909
+Epoch 40
+###Train###
+BCE(x): 4.1706
+BCE(y): 0.3188
+KL(u): 0.8819
+VAE tc: -2.1941
+D tc: 1.2025
+fair_loss: 0.0315
+predict(y) accuracy: 0.8625
+cf: 0.0315
+
+###Valid###
+BCE(x): 4.1998
+BCE(y): 0.3246
+KL(s): 0.8813
+vae tc: -2.1979
+D tc_loss: 1.2042
+fair_loss: 0.0317
+***data***
+cf: 0.0317
+o1: 0.03536449
+o2: 0.02609935
+o3: 0.02976417
+o4: 0.03248062
+Epoch 41
+###Train###
+BCE(x): 4.1661
+BCE(y): 0.3158
+KL(u): 0.8840
+VAE tc: -2.1945
+D tc: 1.2027
+fair_loss: 0.0321
+predict(y) accuracy: 0.8615
+cf: 0.0321
+
+###Valid###
+BCE(x): 4.1662
+BCE(y): 0.3198
+KL(s): 0.9036
+vae tc: -2.1976
+D tc_loss: 1.2040
+fair_loss: 0.0329
+***data***
+cf: 0.0329
+o1: 0.03692041
+o2: 0.02752973
+o3: 0.02989872
+o4: 0.03373067
+Epoch 42
+###Train###
+BCE(x): 4.1580
+BCE(y): 0.3166
+KL(u): 0.8919
+VAE tc: -2.1948
+D tc: 1.2028
+fair_loss: 0.0324
+predict(y) accuracy: 0.8629
+cf: 0.0324
+
+###Valid###
+BCE(x): 4.1898
+BCE(y): 0.3242
+KL(s): 0.8953
+vae tc: -2.1924
+D tc_loss: 1.2020
+fair_loss: 0.0326
+***data***
+cf: 0.0326
+o1: 0.03330463
+o2: 0.02700967
+o3: 0.03016430
+o4: 0.03356285
+Epoch 43
+###Train###
+BCE(x): 4.1524
+BCE(y): 0.3168
+KL(u): 0.9015
+VAE tc: -2.1942
+D tc: 1.2026
+fair_loss: 0.0329
+predict(y) accuracy: 0.8631
+cf: 0.0330
+
+###Valid###
+BCE(x): 4.1865
+BCE(y): 0.3230
+KL(s): 0.8964
+vae tc: -2.1925
+D tc_loss: 1.2020
+fair_loss: 0.0340
+***data***
+cf: 0.0341
+o1: 0.03779124
+o2: 0.02918398
+o3: 0.03184600
+o4: 0.03482869
+Epoch 44
+###Train###
+BCE(x): 4.1443
+BCE(y): 0.3144
+KL(u): 0.9055
+VAE tc: -2.1947
+D tc: 1.2028
+fair_loss: 0.0336
+predict(y) accuracy: 0.8641
+cf: 0.0337
+
+###Valid###
+BCE(x): 4.1512
+BCE(y): 0.3214
+KL(s): 0.9221
+vae tc: -2.2005
+D tc_loss: 1.2051
+fair_loss: 0.0342
+***data***
+cf: 0.0343
+o1: 0.03877986
+o2: 0.02840778
+o3: 0.03189314
+o4: 0.03508978
+Epoch 45
+###Train###
+BCE(x): 4.1331
+BCE(y): 0.3174
+KL(u): 0.9117
+VAE tc: -2.1945
+D tc: 1.2027
+fair_loss: 0.0346
+predict(y) accuracy: 0.8631
+cf: 0.0347
+
+###Valid###
+BCE(x): 4.1408
+BCE(y): 0.3160
+KL(s): 0.9211
+vae tc: -2.1915
+D tc_loss: 1.2016
+fair_loss: 0.0342
+***data***
+cf: 0.0343
+o1: 0.03807301
+o2: 0.02803469
+o3: 0.03078797
+o4: 0.03532428
+Epoch 46
+###Train###
+BCE(x): 4.1341
+BCE(y): 0.3165
+KL(u): 0.9155
+VAE tc: -2.1947
+D tc: 1.2028
+fair_loss: 0.0347
+predict(y) accuracy: 0.8612
+cf: 0.0347
+
+###Valid###
+BCE(x): 4.1344
+BCE(y): 0.3190
+KL(s): 0.9294
+vae tc: -2.1955
+D tc_loss: 1.2031
+fair_loss: 0.0361
+***data***
+cf: 0.0362
+o1: 0.03876765
+o2: 0.03092203
+o3: 0.03371198
+o4: 0.03700767
+Epoch 47
+###Train###
+BCE(x): 4.1255
+BCE(y): 0.3158
+KL(u): 0.9287
+VAE tc: -2.1943
+D tc: 1.2026
+fair_loss: 0.0357
+predict(y) accuracy: 0.8632
+cf: 0.0358
+
+###Valid###
+BCE(x): 4.1350
+BCE(y): 0.3121
+KL(s): 0.9345
+vae tc: -2.1949
+D tc_loss: 1.2028
+fair_loss: 0.0357
+***data***
+cf: 0.0358
+o1: 0.04048524
+o2: 0.02813719
+o3: 0.03127964
+o4: 0.03707432
+Epoch 48
+###Train###
+BCE(x): 4.1182
+BCE(y): 0.3139
+KL(u): 0.9323
+VAE tc: -2.1939
+D tc: 1.2024
+fair_loss: 0.0360
+predict(y) accuracy: 0.8648
+cf: 0.0361
+
+###Valid###
+BCE(x): 4.1203
+BCE(y): 0.3137
+KL(s): 0.9409
+vae tc: -2.1941
+D tc_loss: 1.2025
+fair_loss: 0.0355
+***data***
+cf: 0.0356
+o1: 0.03806895
+o2: 0.02981244
+o3: 0.03195283
+o4: 0.03659227
+Epoch 49
+###Train###
+BCE(x): 4.1084
+BCE(y): 0.3141
+KL(u): 0.9360
+VAE tc: -2.1945
+D tc: 1.2027
+fair_loss: 0.0356
+predict(y) accuracy: 0.8645
+cf: 0.0357
+
+###Valid###
+BCE(x): 4.1171
+BCE(y): 0.3119
+KL(s): 0.9566
+vae tc: -2.1991
+D tc_loss: 1.2045
+fair_loss: 0.0365
+***data***
+cf: 0.0366
+o1: 0.03961275
+o2: 0.03035940
+o3: 0.03293630
+o4: 0.03760527
+Epoch 50
+###Train###
+BCE(x): 4.0979
+BCE(y): 0.3148
+KL(u): 0.9402
+VAE tc: -2.1943
+D tc: 1.2026
+fair_loss: 0.0369
+predict(y) accuracy: 0.8636
+cf: 0.0369
+
+###Valid###
+BCE(x): 4.1095
+BCE(y): 0.3066
+KL(s): 0.9464
+vae tc: -2.1992
+D tc_loss: 1.2046
+fair_loss: 0.0371
+***data***
+cf: 0.0372
+o1: 0.03967240
+o2: 0.03212066
+o3: 0.03516860
+o4: 0.03799795
+Epoch 51
+###Train###
+BCE(x): 4.0926
+BCE(y): 0.3135
+KL(u): 0.9454
+VAE tc: -2.1948
+D tc: 1.2029
+fair_loss: 0.0372
+predict(y) accuracy: 0.8646
+cf: 0.0373
+
+###Valid###
+BCE(x): 4.1108
+BCE(y): 0.3118
+KL(s): 0.9525
+vae tc: -2.1987
+D tc_loss: 1.2044
+fair_loss: 0.0378
+***data***
+cf: 0.0379
+o1: 0.04077262
+o2: 0.03190813
+o3: 0.03576563
+o4: 0.03874751
+Epoch 52
+###Train###
+BCE(x): 4.0845
+BCE(y): 0.3111
+KL(u): 0.9561
+VAE tc: -2.1942
+D tc: 1.2025
+fair_loss: 0.0374
+predict(y) accuracy: 0.8653
+cf: 0.0375
+
+###Valid###
+BCE(x): 4.0976
+BCE(y): 0.3237
+KL(s): 0.9576
+vae tc: -2.1995
+D tc_loss: 1.2047
+fair_loss: 0.0377
+***data***
+cf: 0.0378
+o1: 0.04199768
+o2: 0.03072947
+o3: 0.03398051
+o4: 0.03889012
+Epoch 53
+###Train###
+BCE(x): 4.0807
+BCE(y): 0.3135
+KL(u): 0.9651
+VAE tc: -2.1936
+D tc: 1.2023
+fair_loss: 0.0378
+predict(y) accuracy: 0.8648
+cf: 0.0379
+
+###Valid###
+BCE(x): 4.1025
+BCE(y): 0.3149
+KL(s): 0.9716
+vae tc: -2.1853
+D tc_loss: 1.1991
+fair_loss: 0.0389
+***data***
+cf: 0.0390
+o1: 0.04252836
+o2: 0.03308562
+o3: 0.03682083
+o4: 0.03984827
+Epoch 54
+###Train###
+BCE(x): 4.0718
+BCE(y): 0.3098
+KL(u): 0.9712
+VAE tc: -2.1945
+D tc: 1.2027
+fair_loss: 0.0383
+predict(y) accuracy: 0.8652
+cf: 0.0384
+
+###Valid###
+BCE(x): 4.0700
+BCE(y): 0.3153
+KL(s): 0.9867
+vae tc: -2.1981
+D tc_loss: 1.2041
+fair_loss: 0.0389
+***data***
+cf: 0.0390
+o1: 0.04152473
+o2: 0.03294042
+o3: 0.03615703
+o4: 0.04002732
+Epoch 55
+###Train###
+BCE(x): 4.0653
+BCE(y): 0.3123
+KL(u): 0.9794
+VAE tc: -2.1939
+D tc: 1.2024
+fair_loss: 0.0389
+predict(y) accuracy: 0.8641
+cf: 0.0390
+
+###Valid###
+BCE(x): 4.0804
+BCE(y): 0.3094
+KL(s): 0.9948
+vae tc: -2.1945
+D tc_loss: 1.2028
+fair_loss: 0.0394
+***data***
+cf: 0.0395
+o1: 0.04256466
+o2: 0.03366995
+o3: 0.03578330
+o4: 0.04045247
+Epoch 56
+###Train###
+BCE(x): 4.0586
+BCE(y): 0.3110
+KL(u): 0.9791
+VAE tc: -2.1943
+D tc: 1.2026
+fair_loss: 0.0391
+predict(y) accuracy: 0.8666
+cf: 0.0391
+
+###Valid###
+BCE(x): 4.0759
+BCE(y): 0.3104
+KL(s): 0.9766
+vae tc: -2.1897
+D tc_loss: 1.2008
+fair_loss: 0.0393
+***data***
+cf: 0.0394
+o1: 0.04127266
+o2: 0.03243422
+o3: 0.03720772
+o4: 0.04046750
+Epoch 57
+###Train###
+BCE(x): 4.0555
+BCE(y): 0.3097
+KL(u): 0.9818
+VAE tc: -2.1939
+D tc: 1.2024
+fair_loss: 0.0404
+predict(y) accuracy: 0.8677
+cf: 0.0405
+
+###Valid###
+BCE(x): 4.0691
+BCE(y): 0.3169
+KL(s): 0.9987
+vae tc: -2.1898
+D tc_loss: 1.2008
+fair_loss: 0.0399
+***data***
+cf: 0.0400
+o1: 0.04123640
+o2: 0.03506061
+o3: 0.03732806
+o4: 0.04086076
+Epoch 58
+###Train###
+BCE(x): 4.0533
+BCE(y): 0.3090
+KL(u): 0.9960
+VAE tc: -2.1942
+D tc: 1.2025
+fair_loss: 0.0396
+predict(y) accuracy: 0.8667
+cf: 0.0397
+
+###Valid###
+BCE(x): 4.0756
+BCE(y): 0.3182
+KL(s): 0.9888
+vae tc: -2.1874
+D tc_loss: 1.1999
+fair_loss: 0.0395
+***data***
+cf: 0.0396
+o1: 0.04662251
+o2: 0.03434678
+o3: 0.03648150
+o4: 0.04024252
+Epoch 59
+###Train###
+BCE(x): 4.0477
+BCE(y): 0.3134
+KL(u): 0.9946
+VAE tc: -2.1941
+D tc: 1.2025
+fair_loss: 0.0396
+predict(y) accuracy: 0.8642
+cf: 0.0397
+
+###Valid###
+BCE(x): 4.0688
+BCE(y): 0.3186
+KL(s): 1.0014
+vae tc: -2.2021
+D tc_loss: 1.2058
+fair_loss: 0.0382
+***data***
+cf: 0.0383
+o1: 0.04216075
+o2: 0.03214972
+o3: 0.03682556
+o4: 0.03904951
+Epoch 60
+###Train###
+BCE(x): 4.0308
+BCE(y): 0.3085
+KL(u): 0.9970
+VAE tc: -2.1946
+D tc: 1.2027
+fair_loss: 0.0405
+predict(y) accuracy: 0.8683
+cf: 0.0406
+
+###Valid###
+BCE(x): 4.0520
+BCE(y): 0.3096
+KL(s): 0.9877
+vae tc: -2.1917
+D tc_loss: 1.2016
+fair_loss: 0.0408
+***data***
+cf: 0.0409
+o1: 0.04427416
+o2: 0.03557841
+o3: 0.03943596
+o4: 0.04163209
+Epoch 61
+###Train###
+BCE(x): 4.0338
+BCE(y): 0.3077
+KL(u): 1.0046
+VAE tc: -2.1942
+D tc: 1.2026
+fair_loss: 0.0416
+predict(y) accuracy: 0.8665
+cf: 0.0417
+
+###Valid###
+BCE(x): 4.0447
+BCE(y): 0.3161
+KL(s): 1.0116
+vae tc: -2.1928
+D tc_loss: 1.2020
+fair_loss: 0.0411
+***data***
+cf: 0.0412
+o1: 0.04542248
+o2: 0.03396166
+o3: 0.03804920
+o4: 0.04227344
+Epoch 62
+###Train###
+BCE(x): 4.0297
+BCE(y): 0.3081
+KL(u): 1.0070
+VAE tc: -2.1943
+D tc: 1.2026
+fair_loss: 0.0408
+predict(y) accuracy: 0.8706
+cf: 0.0409
+
+###Valid###
+BCE(x): 4.0421
+BCE(y): 0.3094
+KL(s): 1.0136
+vae tc: -2.1973
+D tc_loss: 1.2037
+fair_loss: 0.0408
+***data***
+cf: 0.0409
+o1: 0.04413699
+o2: 0.03469895
+o3: 0.03843578
+o4: 0.04182300
+Epoch 63
+###Train###
+BCE(x): 4.0174
+BCE(y): 0.3071
+KL(u): 1.0104
+VAE tc: -2.1941
+D tc: 1.2025
+fair_loss: 0.0407
+predict(y) accuracy: 0.8661
+cf: 0.0408
+
+###Valid###
+BCE(x): 4.0401
+BCE(y): 0.3163
+KL(s): 1.0090
+vae tc: -2.1989
+D tc_loss: 1.2045
+fair_loss: 0.0418
+***data***
+cf: 0.0419
+o1: 0.04642017
+o2: 0.03622161
+o3: 0.04097637
+o4: 0.04252509
+Epoch 64
+###Train###
+BCE(x): 4.0249
+BCE(y): 0.3103
+KL(u): 1.0167
+VAE tc: -2.1939
+D tc: 1.2024
+fair_loss: 0.0413
+predict(y) accuracy: 0.8663
+cf: 0.0414
+
+###Valid###
+BCE(x): 4.0297
+BCE(y): 0.3094
+KL(s): 1.0409
+vae tc: -2.1944
+D tc_loss: 1.2027
+fair_loss: 0.0421
+***data***
+cf: 0.0422
+o1: 0.04843458
+o2: 0.03545119
+o3: 0.03907494
+o4: 0.04316965
+Epoch 65
+###Train###
+BCE(x): 4.0128
+BCE(y): 0.3090
+KL(u): 1.0181
+VAE tc: -2.1946
+D tc: 1.2027
+fair_loss: 0.0424
+predict(y) accuracy: 0.8673
+cf: 0.0425
+
+###Valid###
+BCE(x): 4.0110
+BCE(y): 0.3106
+KL(s): 1.0258
+vae tc: -2.1968
+D tc_loss: 1.2035
+fair_loss: 0.0419
+***data***
+cf: 0.0421
+o1: 0.04609693
+o2: 0.03566498
+o3: 0.04010111
+o4: 0.04293084
+Epoch 66
+###Train###
+BCE(x): 4.0049
+BCE(y): 0.3071
+KL(u): 1.0167
+VAE tc: -2.1937
+D tc: 1.2023
+fair_loss: 0.0419
+predict(y) accuracy: 0.8690
+cf: 0.0420
+
+###Valid###
+BCE(x): 4.0045
+BCE(y): 0.3078
+KL(s): 1.0425
+vae tc: -2.1876
+D tc_loss: 1.1999
+fair_loss: 0.0419
+***data***
+cf: 0.0420
+o1: 0.04291498
+o2: 0.03602107
+o3: 0.04033685
+o4: 0.04294275
+Epoch 67
+###Train###
+BCE(x): 4.0033
+BCE(y): 0.3090
+KL(u): 1.0264
+VAE tc: -2.1942
+D tc: 1.2025
+fair_loss: 0.0423
+predict(y) accuracy: 0.8673
+cf: 0.0424
+
+###Valid###
+BCE(x): 4.0247
+BCE(y): 0.3075
+KL(s): 1.0384
+vae tc: -2.1984
+D tc_loss: 1.2043
+fair_loss: 0.0426
+***data***
+cf: 0.0427
+o1: 0.04809842
+o2: 0.03875904
+o3: 0.03985414
+o4: 0.04326022
+Epoch 68
+###Train###
+BCE(x): 4.0026
+BCE(y): 0.3060
+KL(u): 1.0321
+VAE tc: -2.1937
+D tc: 1.2023
+fair_loss: 0.0417
+predict(y) accuracy: 0.8699
+cf: 0.0418
+
+###Valid###
+BCE(x): 3.9927
+BCE(y): 0.3114
+KL(s): 1.0423
+vae tc: -2.1881
+D tc_loss: 1.2001
+fair_loss: 0.0431
+***data***
+cf: 0.0432
+o1: 0.04721747
+o2: 0.03688672
+o3: 0.04088872
+o4: 0.04405942
+Epoch 69
+###Train###
+BCE(x): 3.9959
+BCE(y): 0.3071
+KL(u): 1.0391
+VAE tc: -2.1943
+D tc: 1.2026
+fair_loss: 0.0431
+predict(y) accuracy: 0.8684
+cf: 0.0432
+
+###Valid###
+BCE(x): 3.9990
+BCE(y): 0.3019
+KL(s): 1.0533
+vae tc: -2.1958
+D tc_loss: 1.2031
+fair_loss: 0.0420
+***data***
+cf: 0.0421
+o1: 0.04942494
+o2: 0.03455644
+o3: 0.04121949
+o4: 0.04287598
+Epoch 70
+###Train###
+BCE(x): 3.9890
+BCE(y): 0.3075
+KL(u): 1.0392
+VAE tc: -2.1949
+D tc: 1.2028
+fair_loss: 0.0428
+predict(y) accuracy: 0.8669
+cf: 0.0429
+
+###Valid###
+BCE(x): 3.9890
+BCE(y): 0.3078
+KL(s): 1.0443
+vae tc: -2.1934
+D tc_loss: 1.2023
+fair_loss: 0.0428
+***data***
+cf: 0.0429
+o1: 0.04591090
+o2: 0.03564832
+o3: 0.04101192
+o4: 0.04388781
+Epoch 71
+###Train###
+BCE(x): 3.9905
+BCE(y): 0.3068
+KL(u): 1.0389
+VAE tc: -2.1943
+D tc: 1.2026
+fair_loss: 0.0428
+predict(y) accuracy: 0.8678
+cf: 0.0429
+
+###Valid###
+BCE(x): 3.9754
+BCE(y): 0.3129
+KL(s): 1.0647
+vae tc: -2.1910
+D tc_loss: 1.2012
+fair_loss: 0.0429
+***data***
+cf: 0.0430
+o1: 0.04669044
+o2: 0.03745379
+o3: 0.03884350
+o4: 0.04394064
+Epoch 72
+###Train###
+BCE(x): 3.9868
+BCE(y): 0.3063
+KL(u): 1.0542
+VAE tc: -2.1944
+D tc: 1.2026
+fair_loss: 0.0430
+predict(y) accuracy: 0.8684
+cf: 0.0431
+
+###Valid###
+BCE(x): 3.9779
+BCE(y): 0.3045
+KL(s): 1.0786
+vae tc: -2.1927
+D tc_loss: 1.2020
+fair_loss: 0.0442
+***data***
+cf: 0.0443
+o1: 0.05053757
+o2: 0.03905540
+o3: 0.04098904
+o4: 0.04507868
+Epoch 73
+###Train###
+BCE(x): 3.9788
+BCE(y): 0.3075
+KL(u): 1.0417
+VAE tc: -2.1939
+D tc: 1.2024
+fair_loss: 0.0443
+predict(y) accuracy: 0.8672
+cf: 0.0444
+
+###Valid###
+BCE(x): 3.9825
+BCE(y): 0.3021
+KL(s): 1.0637
+vae tc: -2.1960
+D tc_loss: 1.2032
+fair_loss: 0.0446
+***data***
+cf: 0.0447
+o1: 0.05111804
+o2: 0.03582646
+o3: 0.04214599
+o4: 0.04586766
+Epoch 74
+###Train###
+BCE(x): 3.9766
+BCE(y): 0.3034
+KL(u): 1.0523
+VAE tc: -2.1940
+D tc: 1.2024
+fair_loss: 0.0444
+predict(y) accuracy: 0.8696
+cf: 0.0445
+
+###Valid###
+BCE(x): 3.9799
+BCE(y): 0.2964
+KL(s): 1.0716
+vae tc: -2.1935
+D tc_loss: 1.2022
+fair_loss: 0.0437
+***data***
+cf: 0.0438
+o1: 0.04862617
+o2: 0.03826324
+o3: 0.04181044
+o4: 0.04450407
+Epoch 75
+###Train###
+BCE(x): 3.9690
+BCE(y): 0.3052
+KL(u): 1.0625
+VAE tc: -2.1939
+D tc: 1.2023
+fair_loss: 0.0445
+predict(y) accuracy: 0.8687
+cf: 0.0446
+
+###Valid###
+BCE(x): 4.0015
+BCE(y): 0.3029
+KL(s): 1.0433
+vae tc: -2.1895
+D tc_loss: 1.2007
+fair_loss: 0.0446
+***data***
+cf: 0.0447
+o1: 0.04862798
+o2: 0.03731663
+o3: 0.04102347
+o4: 0.04582788
+Epoch 76
+###Train###
+BCE(x): 3.9754
+BCE(y): 0.3047
+KL(u): 1.0557
+VAE tc: -2.1937
+D tc: 1.2023
+fair_loss: 0.0442
+predict(y) accuracy: 0.8693
+cf: 0.0443
+
+###Valid###
+BCE(x): 3.9857
+BCE(y): 0.3093
+KL(s): 1.0800
+vae tc: -2.1953
+D tc_loss: 1.2030
+fair_loss: 0.0457
+***data***
+cf: 0.0459
+o1: 0.04940577
+o2: 0.03826746
+o3: 0.04180241
+o4: 0.04711410
+Epoch 77
+###Train###
+BCE(x): 3.9592
+BCE(y): 0.3050
+KL(u): 1.0606
+VAE tc: -2.1944
+D tc: 1.2026
+fair_loss: 0.0462
+predict(y) accuracy: 0.8703
+cf: 0.0463
+
+###Valid###
+BCE(x): 3.9690
+BCE(y): 0.3011
+KL(s): 1.0675
+vae tc: -2.1990
+D tc_loss: 1.2045
+fair_loss: 0.0447
+***data***
+cf: 0.0449
+o1: 0.05088875
+o2: 0.03667005
+o3: 0.04463790
+o4: 0.04573259
+Epoch 78
+###Train###
+BCE(x): 3.9654
+BCE(y): 0.3033
+KL(u): 1.0715
+VAE tc: -2.1939
+D tc: 1.2024
+fair_loss: 0.0460
+predict(y) accuracy: 0.8710
+cf: 0.0462
+
+###Valid###
+BCE(x): 3.9969
+BCE(y): 0.3087
+KL(s): 1.0690
+vae tc: -2.1929
+D tc_loss: 1.2019
+fair_loss: 0.0462
+***data***
+cf: 0.0463
+o1: 0.05294114
+o2: 0.04071635
+o3: 0.04303742
+o4: 0.04712194
+Epoch 79
+###Train###
+BCE(x): 3.9625
+BCE(y): 0.3046
+KL(u): 1.0673
+VAE tc: -2.1941
+D tc: 1.2025
+fair_loss: 0.0456
+predict(y) accuracy: 0.8714
+cf: 0.0458
+
+###Valid###
+BCE(x): 3.9714
+BCE(y): 0.3059
+KL(s): 1.0756
+vae tc: -2.1890
+D tc_loss: 1.2004
+fair_loss: 0.0457
+***data***
+cf: 0.0458
+o1: 0.05090078
+o2: 0.04056505
+o3: 0.04211521
+o4: 0.04660955
+Epoch 80
+###Train###
+BCE(x): 3.9589
+BCE(y): 0.3042
+KL(u): 1.0727
+VAE tc: -2.1940
+D tc: 1.2024
+fair_loss: 0.0464
+predict(y) accuracy: 0.8707
+cf: 0.0465
+
+###Valid###
+BCE(x): 3.9613
+BCE(y): 0.3022
+KL(s): 1.0840
+vae tc: -2.1961
+D tc_loss: 1.2033
+fair_loss: 0.0466
+***data***
+cf: 0.0467
+o1: 0.04931325
+o2: 0.03802276
+o3: 0.04633324
+o4: 0.04786054
+Epoch 81
+###Train###
+BCE(x): 3.9587
+BCE(y): 0.3014
+KL(u): 1.0737
+VAE tc: -2.1942
+D tc: 1.2025
+fair_loss: 0.0467
+predict(y) accuracy: 0.8712
+cf: 0.0468
+
+###Valid###
+BCE(x): 3.9500
+BCE(y): 0.2984
+KL(s): 1.0887
+vae tc: -2.1953
+D tc_loss: 1.2030
+fair_loss: 0.0476
+***data***
+cf: 0.0477
+o1: 0.05556816
+o2: 0.03973401
+o3: 0.04431714
+o4: 0.04877726
+Epoch 82
+###Train###
+BCE(x): 3.9535
+BCE(y): 0.3038
+KL(u): 1.0748
+VAE tc: -2.1943
+D tc: 1.2026
+fair_loss: 0.0466
+predict(y) accuracy: 0.8698
+cf: 0.0467
+
+###Valid###
+BCE(x): 3.9742
+BCE(y): 0.2956
+KL(s): 1.0842
+vae tc: -2.1922
+D tc_loss: 1.2017
+fair_loss: 0.0455
+***data***
+cf: 0.0456
+o1: 0.05130623
+o2: 0.03811872
+o3: 0.04432754
+o4: 0.04653409
+Epoch 83
+###Train###
+BCE(x): 3.9526
+BCE(y): 0.3031
+KL(u): 1.0778
+VAE tc: -2.1937
+D tc: 1.2023
+fair_loss: 0.0473
+predict(y) accuracy: 0.8718
+cf: 0.0474
+
+###Valid###
+BCE(x): 3.9627
+BCE(y): 0.2992
+KL(s): 1.0789
+vae tc: -2.1928
+D tc_loss: 1.2020
+fair_loss: 0.0467
+***data***
+cf: 0.0468
+o1: 0.05347671
+o2: 0.04164924
+o3: 0.04397875
+o4: 0.04747092
+Epoch 84
+###Train###
+BCE(x): 3.9456
+BCE(y): 0.3026
+KL(u): 1.0824
+VAE tc: -2.1939
+D tc: 1.2024
+fair_loss: 0.0470
+predict(y) accuracy: 0.8720
+cf: 0.0471
+
+###Valid###
+BCE(x): 3.9323
+BCE(y): 0.3024
+KL(s): 1.0920
+vae tc: -2.2044
+D tc_loss: 1.2066
+fair_loss: 0.0477
+***data***
+cf: 0.0478
+o1: 0.05357554
+o2: 0.04113327
+o3: 0.04512742
+o4: 0.04874296
+Epoch 85
+###Train###
+BCE(x): 3.9434
+BCE(y): 0.3007
+KL(u): 1.0891
+VAE tc: -2.1935
+D tc: 1.2021
+fair_loss: 0.0479
+predict(y) accuracy: 0.8711
+cf: 0.0480
+
+###Valid###
+BCE(x): 3.9443
+BCE(y): 0.2975
+KL(s): 1.0909
+vae tc: -2.1956
+D tc_loss: 1.2030
+fair_loss: 0.0477
+***data***
+cf: 0.0478
+o1: 0.05473116
+o2: 0.03948439
+o3: 0.04612172
+o4: 0.04881930
+Epoch 86
+###Train###
+BCE(x): 3.9449
+BCE(y): 0.2986
+KL(u): 1.0840
+VAE tc: -2.1935
+D tc: 1.2022
+fair_loss: 0.0472
+predict(y) accuracy: 0.8739
+cf: 0.0473
+
+###Valid###
+BCE(x): 3.9392
+BCE(y): 0.2994
+KL(s): 1.1194
+vae tc: -2.1975
+D tc_loss: 1.2039
+fair_loss: 0.0465
+***data***
+cf: 0.0467
+o1: 0.05467926
+o2: 0.03947282
+o3: 0.04426213
+o4: 0.04750680
+Epoch 87
+###Train###
+BCE(x): 3.9349
+BCE(y): 0.2992
+KL(u): 1.0884
+VAE tc: -2.1931
+D tc: 1.2020
+fair_loss: 0.0475
+predict(y) accuracy: 0.8741
+cf: 0.0477
+
+###Valid###
+BCE(x): 3.9461
+BCE(y): 0.3060
+KL(s): 1.1086
+vae tc: -2.1993
+D tc_loss: 1.2046
+fair_loss: 0.0474
+***data***
+cf: 0.0475
+o1: 0.05498488
+o2: 0.04087544
+o3: 0.04620276
+o4: 0.04815669
+Epoch 88
+###Train###
+BCE(x): 3.9305
+BCE(y): 0.2980
+KL(u): 1.0883
+VAE tc: -2.1941
+D tc: 1.2025
+fair_loss: 0.0473
+predict(y) accuracy: 0.8731
+cf: 0.0474
+
+###Valid###
+BCE(x): 3.9494
+BCE(y): 0.3056
+KL(s): 1.0898
+vae tc: -2.1965
+D tc_loss: 1.2035
+fair_loss: 0.0465
+***data***
+cf: 0.0466
+o1: 0.05278691
+o2: 0.04040830
+o3: 0.04293274
+o4: 0.04747427
+Epoch 89
+###Train###
+BCE(x): 3.9339
+BCE(y): 0.2976
+KL(u): 1.0849
+VAE tc: -2.1941
+D tc: 1.2025
+fair_loss: 0.0475
+predict(y) accuracy: 0.8741
+cf: 0.0476
+
+###Valid###
+BCE(x): 3.9510
+BCE(y): 0.3044
+KL(s): 1.0862
+vae tc: -2.1888
+D tc_loss: 1.2004
+fair_loss: 0.0495
+***data***
+cf: 0.0496
+o1: 0.05884490
+o2: 0.04348027
+o3: 0.04619579
+o4: 0.05035124
+Epoch 90
+###Train###
+BCE(x): 3.9314
+BCE(y): 0.2988
+KL(u): 1.0933
+VAE tc: -2.1936
+D tc: 1.2022
+fair_loss: 0.0479
+predict(y) accuracy: 0.8734
+cf: 0.0480
+
+###Valid###
+BCE(x): 3.9401
+BCE(y): 0.2992
+KL(s): 1.1052
+vae tc: -2.1894
+D tc_loss: 1.2005
+fair_loss: 0.0489
+***data***
+cf: 0.0490
+o1: 0.05400915
+o2: 0.04230579
+o3: 0.04793702
+o4: 0.04977290
+Epoch 91
+###Train###
+BCE(x): 3.9261
+BCE(y): 0.2988
+KL(u): 1.0907
+VAE tc: -2.1933
+D tc: 1.2021
+fair_loss: 0.0477
+predict(y) accuracy: 0.8727
+cf: 0.0478
+
+###Valid###
+BCE(x): 3.9334
+BCE(y): 0.2956
+KL(s): 1.0948
+vae tc: -2.2006
+D tc_loss: 1.2052
+fair_loss: 0.0490
+***data***
+cf: 0.0491
+o1: 0.05759385
+o2: 0.04376247
+o3: 0.04629818
+o4: 0.04975848
+Epoch 92
+###Train###
+BCE(x): 3.9272
+BCE(y): 0.2955
+KL(u): 1.0937
+VAE tc: -2.1945
+D tc: 1.2026
+fair_loss: 0.0483
+predict(y) accuracy: 0.8758
+cf: 0.0484
+
+###Valid###
+BCE(x): 3.9318
+BCE(y): 0.3040
+KL(s): 1.1082
+vae tc: -2.1918
+D tc_loss: 1.2016
+fair_loss: 0.0483
+***data***
+cf: 0.0484
+o1: 0.05339350
+o2: 0.04259882
+o3: 0.04693624
+o4: 0.04914504
+Epoch 93
+###Train###
+BCE(x): 3.9181
+BCE(y): 0.3002
+KL(u): 1.0940
+VAE tc: -2.1936
+D tc: 1.2022
+fair_loss: 0.0490
+predict(y) accuracy: 0.8726
+cf: 0.0491
+
+###Valid###
+BCE(x): 3.9289
+BCE(y): 0.2934
+KL(s): 1.1038
+vae tc: -2.1918
+D tc_loss: 1.2017
+fair_loss: 0.0494
+***data***
+cf: 0.0495
+o1: 0.05553877
+o2: 0.04365685
+o3: 0.04746436
+o4: 0.05021364
+Epoch 94
+###Train###
+BCE(x): 3.9157
+BCE(y): 0.2938
+KL(u): 1.1021
+VAE tc: -2.1936
+D tc: 1.2023
+fair_loss: 0.0487
+predict(y) accuracy: 0.8766
+cf: 0.0489
+
+###Valid###
+BCE(x): 3.9305
+BCE(y): 0.2954
+KL(s): 1.0990
+vae tc: -2.1933
+D tc_loss: 1.2023
+fair_loss: 0.0480
+***data***
+cf: 0.0481
+o1: 0.05540969
+o2: 0.04167877
+o3: 0.04555316
+o4: 0.04886965
+Epoch 95
+###Train###
+BCE(x): 3.9136
+BCE(y): 0.2956
+KL(u): 1.0990
+VAE tc: -2.1943
+D tc: 1.2025
+fair_loss: 0.0481
+predict(y) accuracy: 0.8737
+cf: 0.0482
+
+###Valid###
+BCE(x): 3.9334
+BCE(y): 0.2977
+KL(s): 1.1081
+vae tc: -2.1952
+D tc_loss: 1.2030
+fair_loss: 0.0501
+***data***
+cf: 0.0502
+o1: 0.05786385
+o2: 0.04465979
+o3: 0.04877904
+o4: 0.05079436
+Epoch 96
+###Train###
+BCE(x): 3.9155
+BCE(y): 0.2955
+KL(u): 1.1029
+VAE tc: -2.1931
+D tc: 1.2020
+fair_loss: 0.0488
+predict(y) accuracy: 0.8753
+cf: 0.0489
+
+###Valid###
+BCE(x): 3.9477
+BCE(y): 0.2974
+KL(s): 1.1087
+vae tc: -2.1936
+D tc_loss: 1.2023
+fair_loss: 0.0488
+***data***
+cf: 0.0489
+o1: 0.05461956
+o2: 0.04385694
+o3: 0.04837364
+o4: 0.04944509
+Epoch 97
+###Train###
+BCE(x): 3.9167
+BCE(y): 0.2942
+KL(u): 1.1092
+VAE tc: -2.1942
+D tc: 1.2025
+fair_loss: 0.0492
+predict(y) accuracy: 0.8767
+cf: 0.0493
+
+###Valid###
+BCE(x): 3.9286
+BCE(y): 0.3008
+KL(s): 1.1208
+vae tc: -2.1977
+D tc_loss: 1.2040
+fair_loss: 0.0499
+***data***
+cf: 0.0501
+o1: 0.05557849
+o2: 0.04302279
+o3: 0.04928023
+o4: 0.05086560
+Epoch 98
+###Train###
+BCE(x): 3.9125
+BCE(y): 0.2956
+KL(u): 1.1051
+VAE tc: -2.1930
+D tc: 1.2020
+fair_loss: 0.0492
+predict(y) accuracy: 0.8746
+cf: 0.0493
+
+###Valid###
+BCE(x): 3.9143
+BCE(y): 0.2940
+KL(s): 1.1260
+vae tc: -2.1959
+D tc_loss: 1.2032
+fair_loss: 0.0511
+***data***
+cf: 0.0512
+o1: 0.05744842
+o2: 0.04501536
+o3: 0.04883755
+o4: 0.05199305
+Epoch 99
+###Train###
+BCE(x): 3.9097
+BCE(y): 0.2944
+KL(u): 1.1132
+VAE tc: -2.1946
+D tc: 1.2027
+fair_loss: 0.0499
+predict(y) accuracy: 0.8750
+cf: 0.0500
+
+###Valid###
+BCE(x): 3.9293
+BCE(y): 0.2968
+KL(s): 1.1046
+vae tc: -2.1910
+D tc_loss: 1.2013
+fair_loss: 0.0502
+***data***
+cf: 0.0503
+o1: 0.05955846
+o2: 0.04315883
+o3: 0.04871906
+o4: 0.05105827
+Epoch 100
+###Train###
+BCE(x): 3.9054
+BCE(y): 0.2937
+KL(u): 1.1107
+VAE tc: -2.1936
+D tc: 1.2022
+fair_loss: 0.0498
+predict(y) accuracy: 0.8750
+cf: 0.0499
+
+###Valid###
+BCE(x): 3.9260
+BCE(y): 0.3008
+KL(s): 1.1126
+vae tc: -2.1940
+D tc_loss: 1.2025
+fair_loss: 0.0500
+***data***
+cf: 0.0501
+o1: 0.05896481
+o2: 0.04397062
+o3: 0.04988861
+o4: 0.05062435
+Epoch 101
+###Train###
+BCE(x): 3.8970
+BCE(y): 0.2937
+KL(u): 1.1059
+VAE tc: -2.1941
+D tc: 1.2025
+fair_loss: 0.0505
+predict(y) accuracy: 0.8761
+cf: 0.0506
+
+###Valid###
+BCE(x): 3.9437
+BCE(y): 0.2954
+KL(s): 1.0843
+vae tc: -2.1912
+D tc_loss: 1.2014
+fair_loss: 0.0494
+***data***
+cf: 0.0496
+o1: 0.05461559
+o2: 0.04372445
+o3: 0.04963674
+o4: 0.05013905
+Epoch 102
+###Train###
+BCE(x): 3.9078
+BCE(y): 0.2975
+KL(u): 1.1227
+VAE tc: -2.1939
+D tc: 1.2024
+fair_loss: 0.0496
+predict(y) accuracy: 0.8741
+cf: 0.0497
+
+###Valid###
+BCE(x): 3.9088
+BCE(y): 0.2900
+KL(s): 1.1385
+vae tc: -2.1951
+D tc_loss: 1.2029
+fair_loss: 0.0505
+***data***
+cf: 0.0506
+o1: 0.06022343
+o2: 0.04487650
+o3: 0.04798014
+o4: 0.05122744
+Epoch 103
+###Train###
+BCE(x): 3.9031
+BCE(y): 0.2928
+KL(u): 1.1249
+VAE tc: -2.1932
+D tc: 1.2021
+fair_loss: 0.0505
+predict(y) accuracy: 0.8767
+cf: 0.0506
+
+###Valid###
+BCE(x): 3.9193
+BCE(y): 0.2977
+KL(s): 1.1283
+vae tc: -2.1981
+D tc_loss: 1.2041
+fair_loss: 0.0499
+***data***
+cf: 0.0500
+o1: 0.06116419
+o2: 0.04336634
+o3: 0.04922613
+o4: 0.05051124
+Epoch 104
+###Train###
+BCE(x): 3.9032
+BCE(y): 0.2947
+KL(u): 1.1222
+VAE tc: -2.1942
+D tc: 1.2025
+fair_loss: 0.0506
+predict(y) accuracy: 0.8750
+cf: 0.0507
+
+###Valid###
+BCE(x): 3.9063
+BCE(y): 0.2889
+KL(s): 1.1331
+vae tc: -2.1994
+D tc_loss: 1.2047
+fair_loss: 0.0499
+***data***
+cf: 0.0500
+o1: 0.05752856
+o2: 0.04289760
+o3: 0.04975166
+o4: 0.05063834
+Epoch 105
+###Train###
+BCE(x): 3.8946
+BCE(y): 0.2919
+KL(u): 1.1196
+VAE tc: -2.1929
+D tc: 1.2019
+fair_loss: 0.0499
+predict(y) accuracy: 0.8788
+cf: 0.0500
+
+###Valid###
+BCE(x): 3.9094
+BCE(y): 0.3030
+KL(s): 1.1173
+vae tc: -2.1957
+D tc_loss: 1.2032
+fair_loss: 0.0502
+***data***
+cf: 0.0503
+o1: 0.05465190
+o2: 0.04461721
+o3: 0.05053352
+o4: 0.05087684
+Epoch 106
+###Train###
+BCE(x): 3.8928
+BCE(y): 0.2907
+KL(u): 1.1228
+VAE tc: -2.1938
+D tc: 1.2023
+fair_loss: 0.0503
+predict(y) accuracy: 0.8755
+cf: 0.0504
+
+###Valid###
+BCE(x): 3.9056
+BCE(y): 0.2913
+KL(s): 1.1276
+vae tc: -2.1944
+D tc_loss: 1.2027
+fair_loss: 0.0507
+***data***
+cf: 0.0508
+o1: 0.06031985
+o2: 0.04392719
+o3: 0.05034589
+o4: 0.05141790
+Epoch 107
+###Train###
+BCE(x): 3.8951
+BCE(y): 0.2919
+KL(u): 1.1219
+VAE tc: -2.1937
+D tc: 1.2023
+fair_loss: 0.0505
+predict(y) accuracy: 0.8769
+cf: 0.0507
+
+###Valid###
+BCE(x): 3.9059
+BCE(y): 0.2938
+KL(s): 1.1269
+vae tc: -2.1871
+D tc_loss: 1.1998
+fair_loss: 0.0498
+***data***
+cf: 0.0499
+o1: 0.05911662
+o2: 0.04294519
+o3: 0.04776370
+o4: 0.05060155
+Epoch 108
+###Train###
+BCE(x): 3.8898
+BCE(y): 0.2928
+KL(u): 1.1247
+VAE tc: -2.1938
+D tc: 1.2023
+fair_loss: 0.0507
+predict(y) accuracy: 0.8778
+cf: 0.0508
+
+###Valid###
+BCE(x): 3.9146
+BCE(y): 0.2927
+KL(s): 1.1198
+vae tc: -2.2036
+D tc_loss: 1.2063
+fair_loss: 0.0508
+***data***
+cf: 0.0509
+o1: 0.05754901
+o2: 0.04466025
+o3: 0.04904901
+o4: 0.05168234
+Epoch 109
+###Train###
+BCE(x): 3.8925
+BCE(y): 0.2904
+KL(u): 1.1258
+VAE tc: -2.1940
+D tc: 1.2024
+fair_loss: 0.0510
+predict(y) accuracy: 0.8777
+cf: 0.0511
+
+###Valid###
+BCE(x): 3.8987
+BCE(y): 0.2933
+KL(s): 1.1369
+vae tc: -2.2016
+D tc_loss: 1.2054
+fair_loss: 0.0509
+***data***
+cf: 0.0511
+o1: 0.05481338
+o2: 0.04462497
+o3: 0.05028290
+o4: 0.05184824
+Epoch 110
+###Train###
+BCE(x): 3.8904
+BCE(y): 0.2895
+KL(u): 1.1352
+VAE tc: -2.1937
+D tc: 1.2023
+fair_loss: 0.0499
+predict(y) accuracy: 0.8779
+cf: 0.0501
+
+###Valid###
+BCE(x): 3.8860
+BCE(y): 0.2931
+KL(s): 1.1529
+vae tc: -2.1978
+D tc_loss: 1.2041
+fair_loss: 0.0519
+***data***
+cf: 0.0520
+o1: 0.05958277
+o2: 0.04331280
+o3: 0.05182279
+o4: 0.05292042
+Epoch 111
+###Train###
+BCE(x): 3.8820
+BCE(y): 0.2908
+KL(u): 1.1322
+VAE tc: -2.1936
+D tc: 1.2022
+fair_loss: 0.0518
+predict(y) accuracy: 0.8765
+cf: 0.0519
+
+###Valid###
+BCE(x): 3.9074
+BCE(y): 0.2919
+KL(s): 1.1313
+vae tc: -2.1941
+D tc_loss: 1.2025
+fair_loss: 0.0508
+***data***
+cf: 0.0509
+o1: 0.05993358
+o2: 0.04408216
+o3: 0.05025292
+o4: 0.05152621
+Epoch 112
+###Train###
+BCE(x): 3.8870
+BCE(y): 0.2916
+KL(u): 1.1339
+VAE tc: -2.1935
+D tc: 1.2022
+fair_loss: 0.0515
+predict(y) accuracy: 0.8787
+cf: 0.0517
+
+###Valid###
+BCE(x): 3.8908
+BCE(y): 0.2943
+KL(s): 1.1572
+vae tc: -2.1902
+D tc_loss: 1.2009
+fair_loss: 0.0524
+***data***
+cf: 0.0525
+o1: 0.06320409
+o2: 0.04766084
+o3: 0.05105248
+o4: 0.05279030
+Epoch 113
+###Train###
+BCE(x): 3.8790
+BCE(y): 0.2884
+KL(u): 1.1302
+VAE tc: -2.1943
+D tc: 1.2026
+fair_loss: 0.0522
+predict(y) accuracy: 0.8774
+cf: 0.0523
+
+###Valid###
+BCE(x): 3.9187
+BCE(y): 0.2938
+KL(s): 1.1246
+vae tc: -2.1995
+D tc_loss: 1.2048
+fair_loss: 0.0511
+***data***
+cf: 0.0512
+o1: 0.06156738
+o2: 0.04564418
+o3: 0.05304476
+o4: 0.05139371
+Epoch 114
+###Train###
+BCE(x): 3.8808
+BCE(y): 0.2903
+KL(u): 1.1355
+VAE tc: -2.1937
+D tc: 1.2023
+fair_loss: 0.0514
+predict(y) accuracy: 0.8790
+cf: 0.0515
+
+###Valid###
+BCE(x): 3.8976
+BCE(y): 0.2883
+KL(s): 1.1467
+vae tc: -2.1894
+D tc_loss: 1.2005
+fair_loss: 0.0523
+***data***
+cf: 0.0525
+o1: 0.06245062
+o2: 0.04501129
+o3: 0.05095887
+o4: 0.05318268
+Epoch 115
+###Train###
+BCE(x): 3.8751
+BCE(y): 0.2890
+KL(u): 1.1389
+VAE tc: -2.1940
+D tc: 1.2024
+fair_loss: 0.0523
+predict(y) accuracy: 0.8787
+cf: 0.0524
+
+###Valid###
+BCE(x): 3.9047
+BCE(y): 0.2890
+KL(s): 1.1479
+vae tc: -2.1916
+D tc_loss: 1.2015
+fair_loss: 0.0513
+***data***
+cf: 0.0514
+o1: 0.06315740
+o2: 0.04503367
+o3: 0.05037723
+o4: 0.05184938
+time elapsed: 21.1033min
+best epoch for loss is 84
+best epoch for accuracy is 115
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=True, run=1, gpu=0, dataset='UCI', retrain=False, path=False, test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=True, run=1, gpu=0, dataset='UCI', retrain=False, path=False, test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=True, path_attribute='0', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=True, path_attribute='0', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=True, run=1, gpu=0, dataset='UCI', retrain=False, path=True, path_attribute='0', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=True, path_attribute='1', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=True, run=1, gpu=0, dataset='UCI', retrain=False, path=True, path_attribute='1', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=True, path_attribute='2', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=True, run=1, gpu=0, dataset='UCI', retrain=False, path=True, path_attribute='2', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=True, multi_u=False, run=1, gpu=0, dataset='UCI', retrain=False, path=True, path_attribute='0', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=True, multi_u=False, run=1, gpu=0, dataset='UCI', retrain=False, path=True, path_attribute='1', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=True, multi_u=False, run=1, gpu=0, dataset='UCI', retrain=False, path=True, path_attribute='2', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=True, multi_u=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, multi_u=False, run=1, gpu=0, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, multi_u=False, run=1, gpu=0, normalize=False, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, multi_u=False, run=1, gpu=0, normalize=False, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=True, multi_u=False, run=1, gpu=0, normalize=False, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, multi_u=False, run=1, gpu=0, normalize=False, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, multi_u=False, run=1, gpu=0, normalize=False, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, multi_u=False, run=1, gpu=0, normalize=False, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=True, multi_u=False, run=1, gpu=0, normalize=False, dataset='UCI', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/DCEVAE_ours/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, multi_u=False, run=1, gpu=0, normalize=False, dataset='UCI', retrain=False, path=True, path_attribute='0', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/DCEVAE/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=True, multi_u=False, run=1, gpu=0, normalize=False, dataset='UCI', retrain=False, path=True, path_attribute='0', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/DCEVAE/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=False, multi_u=False, run=1, gpu=0, normalize=False, dataset='UCI', retrain=False, path=True, path_attribute='1', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/DCEVAE/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1, a_r=1, a_d=1, a_a=1, a_f=0.2, a_h=0.4, u_kl=1, ur_dim=3, ud_dim=4, h_dim=100, use_label=True, use_real=True, multi_u=False, run=1, gpu=0, normalize=False, dataset='UCI', retrain=False, path=True, path_attribute='1', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=1, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/DCEVAE/result/a_r_1_a_d_1_a_y_1_a_h_0.4_a_f_0.2_u_1_ur_3_ud_4_run_1_use_label_True')
+This code uses cuda

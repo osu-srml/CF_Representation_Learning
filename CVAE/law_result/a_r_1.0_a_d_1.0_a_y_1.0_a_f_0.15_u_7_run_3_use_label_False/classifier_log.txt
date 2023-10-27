@@ -1,0 +1,9 @@
+Namespace(n_epochs=2000, batch_size=256, lr=0.001, loss_fn='BCE', break_epoch=30, act_fn='Tanh', a_y=1.0, a_r=1.0, a_d=1.0, a_f=0.15, u_kl=1.0, u_dim=7, run=3, gpu=0, rep=0, use_label=False, use_real=False, normalize=True, path=True, path_attribute='SAT', retrain=False, debug=True, test=True, tSNE=True, clf=True, balance=False, early_stop=True, dataset='law', seed=3, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/CVAE/law_result/a_r_1.0_a_d_1.0_a_y_1.0_a_f_0.15_u_7_run_3_use_label_False')
+(factual) chi squared distance is: 0.0252
+(counter) chi squared distance is: 0.0307
+(whole) chi squared distance is: 0.0269
+mean squared error of Linear Regression -->    0.8930
+(factual) chi squared distance is: 0.0252
+(counter) chi squared distance is: 0.0307
+(whole) chi squared distance is: 0.0269
+mean squared error of Linear Regression -->    0.8719

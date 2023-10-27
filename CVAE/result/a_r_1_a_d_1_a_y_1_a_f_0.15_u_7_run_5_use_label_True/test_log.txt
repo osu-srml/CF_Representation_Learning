@@ -1,0 +1,7 @@
+Namespace(n_epochs=500, batch_size=256, lr=0.0001, loss_fn='BCE', break_epoch=30, act_fn='Tanh', a_y=1, a_r=1, a_d=1, a_f=0.15, u_kl=1, u_dim=7, run=5, gpu=0, rep=0, use_label=True, use_real=True, normalize=False, path=False, path_attribute='GPA', retrain=False, debug=True, test=True, tSNE=True, clf=True, balance=False, early_stop=True, dataset='adult', seed=5, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/DCEVAE/Tabular/CVAE_baseline/result/a_r_1_a_d_1_a_y_1_a_f_0.15_u_7_run_5_use_label_True')
+***data***
+cf: 0.0538
+o1: 0.03294631
+o2: 0.03432860
+o3: 0.04785786
+o4: 0.05779648

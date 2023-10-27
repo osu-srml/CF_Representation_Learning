@@ -1,0 +1,1427 @@
+Namespace(n_epochs=2000, batch_size=256, lr=0.001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1.0, a_r=1.0, a_d=1.0, a_a=1, a_f=0.2, a_h=0.4, u_kl=1.0, ur_dim=3, ud_dim=4, h_dim=100, use_label=False, use_real=False, multi_u=False, run=3, gpu=0, normalize=True, dataset='law', retrain=True, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=3, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/DCEVAE/law_result/a_r_1.0_a_d_1.0_a_y_1.0_a_h_0.4_a_f_0.2_u_1.0_ur_3_ud_4_run_3_use_label_False')
+Namespace(n_epochs=2000, batch_size=256, lr=0.001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1.0, a_r=1.0, a_d=1.0, a_a=1, a_f=0.2, a_h=0.4, u_kl=1.0, ur_dim=3, ud_dim=4, h_dim=100, use_label=False, use_real=False, multi_u=False, run=3, gpu=0, normalize=True, dataset='law', retrain=True, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=3, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/DCEVAE/law_result/a_r_1.0_a_d_1.0_a_y_1.0_a_h_0.4_a_f_0.2_u_1.0_ur_3_ud_4_run_3_use_label_False')
+Namespace(n_epochs=2000, batch_size=256, lr=0.001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1.0, a_r=1.0, a_d=1.0, a_a=1, a_f=0.2, a_h=0.4, u_kl=1.0, ur_dim=3, ud_dim=4, h_dim=100, use_label=False, use_real=False, multi_u=False, run=3, gpu=0, normalize=True, dataset='law', retrain=True, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=3, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/DCEVAE/law_result/a_r_1.0_a_d_1.0_a_y_1.0_a_h_0.4_a_f_0.2_u_1.0_ur_3_ud_4_run_3_use_label_False')
+This code uses cuda
+**************************************************
+Initializing
+**************************************************
+
+
+
+
+
+
+
+
+
+
+
+**************************************************
+Load Dataset
+input dim = {'r': 8, 'd': 2, 'a': 1, 'y': 1}
+Current CUDA random seed 3
+**************************************************
+
+
+
+
+
+
+
+
+
+
+
+**************************************************
+Train Start
+  0%|          | 0/2000 [00:00<?, ?it/s]Epoch 0
+###Train###
+BCE(x): 5.8566
+KL(u): 0.1848
+VAE tc: -2.0816
+D tc: 1.2069
+
+###Valid###
+BCE(x): 4.1116
+KL(s): 0.3156
+vae tc: -2.3300
+D tc_loss: 1.2622
+  0%|          | 1/2000 [00:04<2:34:28,  4.64s/it]Epoch 1
+###Train###
+BCE(x): 3.3951
+KL(u): 0.5030
+VAE tc: -2.2025
+D tc: 1.2083
+
+###Valid###
+BCE(x): 2.7290
+KL(s): 0.5762
+vae tc: -2.1932
+D tc_loss: 1.2033
+  0%|          | 2/2000 [00:08<2:17:46,  4.14s/it]Epoch 2
+###Train###
+BCE(x): 2.5210
+KL(u): 0.6552
+VAE tc: -2.1951
+D tc: 1.2039
+
+###Valid###
+BCE(x): 2.1666
+KL(s): 0.7135
+vae tc: -2.2085
+D tc_loss: 1.2090
+  0%|          | 3/2000 [00:12<2:10:43,  3.93s/it]Epoch 3
+###Train###
+BCE(x): 2.1576
+KL(u): 0.7354
+VAE tc: -2.1968
+D tc: 1.2042
+
+###Valid###
+BCE(x): 1.9249
+KL(s): 0.7884
+vae tc: -2.1878
+D tc_loss: 1.2005
+  0%|          | 4/2000 [00:15<1:58:41,  3.57s/it]Epoch 4
+###Train###
+BCE(x): 1.9998
+KL(u): 0.7714
+VAE tc: -2.1957
+D tc: 1.2035
+
+###Valid###
+BCE(x): 1.8719
+KL(s): 0.7670
+vae tc: -2.1876
+D tc_loss: 1.2001
+  0%|          | 5/2000 [00:18<1:51:45,  3.36s/it]Epoch 5
+###Train###
+BCE(x): 1.9184
+KL(u): 0.8081
+VAE tc: -2.1953
+D tc: 1.2033
+
+###Valid###
+BCE(x): 1.7750
+KL(s): 0.7939
+vae tc: -2.2024
+D tc_loss: 1.2056
+  0%|          | 6/2000 [00:21<1:48:58,  3.28s/it]Epoch 6
+###Train###
+BCE(x): 1.8621
+KL(u): 0.8203
+VAE tc: -2.1965
+D tc: 1.2038
+
+###Valid###
+BCE(x): 1.7359
+KL(s): 0.8174
+vae tc: -2.1959
+D tc_loss: 1.2034
+  0%|          | 7/2000 [00:24<1:45:57,  3.19s/it]Epoch 7
+###Train###
+BCE(x): 1.8118
+KL(u): 0.8438
+VAE tc: -2.1935
+D tc: 1.2024
+
+###Valid###
+BCE(x): 1.7286
+KL(s): 0.8071
+vae tc: -2.1982
+D tc_loss: 1.2045
+  0%|          | 8/2000 [00:27<1:44:39,  3.15s/it]Epoch 8
+###Train###
+BCE(x): 1.7702
+KL(u): 0.8677
+VAE tc: -2.1917
+D tc: 1.2015
+
+###Valid###
+BCE(x): 1.6969
+KL(s): 0.8491
+vae tc: -2.1914
+D tc_loss: 1.2017
+  0%|          | 9/2000 [00:30<1:43:29,  3.12s/it]Epoch 9
+###Train###
+BCE(x): 1.7507
+KL(u): 0.8755
+VAE tc: -2.1931
+D tc: 1.2022
+
+###Valid###
+BCE(x): 1.6886
+KL(s): 0.8591
+vae tc: -2.1940
+D tc_loss: 1.2026
+  0%|          | 10/2000 [00:33<1:45:08,  3.17s/it]Epoch 10
+###Train###
+BCE(x): 1.7099
+KL(u): 0.9010
+VAE tc: -2.1934
+D tc: 1.2024
+
+###Valid###
+BCE(x): 1.6689
+KL(s): 0.8430
+vae tc: -2.1915
+D tc_loss: 1.2016
+  1%|          | 11/2000 [00:36<1:46:47,  3.22s/it]Epoch 11
+###Train###
+BCE(x): 1.6947
+KL(u): 0.9201
+VAE tc: -2.1946
+D tc: 1.2028
+
+###Valid###
+BCE(x): 1.6008
+KL(s): 0.8842
+vae tc: -2.1905
+D tc_loss: 1.2010
+  1%|          | 12/2000 [00:40<1:45:49,  3.19s/it]Epoch 12
+###Train###
+BCE(x): 1.6858
+KL(u): 0.9105
+VAE tc: -2.1903
+D tc: 1.2009
+
+###Valid###
+BCE(x): 1.5441
+KL(s): 0.9422
+vae tc: -2.1943
+D tc_loss: 1.2025
+  1%|          | 13/2000 [00:43<1:44:37,  3.16s/it]Epoch 13
+###Train###
+BCE(x): 1.6528
+KL(u): 0.9511
+VAE tc: -2.1937
+D tc: 1.2024
+
+###Valid###
+BCE(x): 1.5621
+KL(s): 0.9435
+vae tc: -2.1974
+D tc_loss: 1.2039
+  1%|          | 14/2000 [00:46<1:44:25,  3.15s/it]Epoch 14
+###Train###
+BCE(x): 1.6181
+KL(u): 0.9444
+VAE tc: -2.1914
+D tc: 1.2013
+
+###Valid###
+BCE(x): 1.5510
+KL(s): 0.9166
+vae tc: -2.1877
+D tc_loss: 1.1999
+  1%|          | 15/2000 [00:49<1:43:29,  3.13s/it]Epoch 15
+###Train###
+BCE(x): 1.6182
+KL(u): 0.9740
+VAE tc: -2.1905
+D tc: 1.2010
+
+###Valid###
+BCE(x): 1.5587
+KL(s): 0.9156
+vae tc: -2.1777
+D tc_loss: 1.1957
+  1%|          | 16/2000 [00:52<1:42:05,  3.09s/it]Epoch 16
+###Train###
+BCE(x): 1.6156
+KL(u): 0.9512
+VAE tc: -2.1904
+D tc: 1.2009
+
+###Valid###
+BCE(x): 1.5655
+KL(s): 0.9293
+vae tc: -2.1906
+D tc_loss: 1.2010
+  1%|          | 17/2000 [00:55<1:41:39,  3.08s/it]Epoch 17
+###Train###
+BCE(x): 1.5970
+KL(u): 0.9660
+VAE tc: -2.1926
+D tc: 1.2018
+
+###Valid###
+BCE(x): 1.5146
+KL(s): 0.9424
+vae tc: -2.2101
+D tc_loss: 1.2091
+  1%|          | 18/2000 [00:58<1:40:38,  3.05s/it]Epoch 18
+###Train###
+BCE(x): 1.5960
+KL(u): 0.9634
+VAE tc: -2.1907
+D tc: 1.2010
+
+###Valid###
+BCE(x): 1.5451
+KL(s): 0.9047
+vae tc: -2.1818
+D tc_loss: 1.1971
+  1%|          | 19/2000 [01:01<1:39:49,  3.02s/it]Epoch 19
+###Train###
+BCE(x): 1.5860
+KL(u): 0.9795
+VAE tc: -2.1904
+D tc: 1.2008
+
+###Valid###
+BCE(x): 1.5657
+KL(s): 0.9035
+vae tc: -2.2184
+D tc_loss: 1.2127
+  1%|          | 20/2000 [01:04<1:40:53,  3.06s/it]Epoch 20
+###Train###
+BCE(x): 1.5722
+KL(u): 0.9825
+VAE tc: -2.1932
+D tc: 1.2019
+
+###Valid###
+BCE(x): 1.5226
+KL(s): 0.9318
+vae tc: -2.1698
+D tc_loss: 1.1927
+  1%|          | 21/2000 [01:07<1:40:00,  3.03s/it]Epoch 21
+###Train###
+BCE(x): 1.5680
+KL(u): 0.9913
+VAE tc: -2.1886
+D tc: 1.2001
+
+###Valid###
+BCE(x): 1.4951
+KL(s): 0.9683
+vae tc: -2.1956
+D tc_loss: 1.2036
+  1%|          | 22/2000 [01:10<1:40:00,  3.03s/it]Epoch 22
+###Train###
+BCE(x): 1.5660
+KL(u): 0.9957
+VAE tc: -2.1906
+D tc: 1.2009
+
+###Valid###
+BCE(x): 1.4491
+KL(s): 0.9802
+vae tc: -2.1952
+D tc_loss: 1.2029
+  1%|          | 23/2000 [01:14<1:52:49,  3.42s/it]Epoch 23
+###Train###
+BCE(x): 1.5412
+KL(u): 1.0137
+VAE tc: -2.1907
+D tc: 1.2009
+
+###Valid###
+BCE(x): 1.4814
+KL(s): 0.9793
+vae tc: -2.1757
+D tc_loss: 1.1953
+  1%|          | 24/2000 [01:17<1:48:41,  3.30s/it]Epoch 24
+###Train###
+BCE(x): 1.5403
+KL(u): 0.9981
+VAE tc: -2.1898
+D tc: 1.2006
+
+###Valid###
+BCE(x): 1.4585
+KL(s): 0.9853
+vae tc: -2.2032
+D tc_loss: 1.2067
+  1%|▏         | 25/2000 [01:20<1:45:22,  3.20s/it]Epoch 25
+###Train###
+BCE(x): 1.5312
+KL(u): 0.9999
+VAE tc: -2.1893
+D tc: 1.2003
+
+###Valid###
+BCE(x): 1.4297
+KL(s): 1.0255
+vae tc: -2.2027
+D tc_loss: 1.2061
+  1%|▏         | 26/2000 [01:23<1:43:52,  3.16s/it]Epoch 26
+###Train###
+BCE(x): 1.5260
+KL(u): 1.0203
+VAE tc: -2.1882
+D tc: 1.1997
+
+###Valid###
+BCE(x): 1.4515
+KL(s): 0.9828
+vae tc: -2.1842
+D tc_loss: 1.1982
+  1%|▏         | 27/2000 [01:26<1:42:04,  3.10s/it]Epoch 27
+###Train###
+BCE(x): 1.5265
+KL(u): 1.0014
+VAE tc: -2.1907
+D tc: 1.2009
+
+###Valid###
+BCE(x): 1.4698
+KL(s): 0.9941
+vae tc: -2.1858
+D tc_loss: 1.1988
+  1%|▏         | 28/2000 [01:29<1:41:28,  3.09s/it]Epoch 28
+###Train###
+BCE(x): 1.5068
+KL(u): 1.0332
+VAE tc: -2.1888
+D tc: 1.2000
+
+###Valid###
+BCE(x): 1.4012
+KL(s): 1.0294
+vae tc: -2.1806
+D tc_loss: 1.1969
+  1%|▏         | 29/2000 [01:32<1:40:51,  3.07s/it]Epoch 29
+###Train###
+BCE(x): 1.5042
+KL(u): 1.0305
+VAE tc: -2.1896
+D tc: 1.2003
+
+###Valid###
+BCE(x): 1.3892
+KL(s): 1.0410
+vae tc: -2.1813
+D tc_loss: 1.1968
+  2%|▏         | 30/2000 [01:35<1:40:06,  3.05s/it]Epoch 30
+###Train###
+BCE(x): 1.5017
+KL(u): 1.0395
+VAE tc: -2.1881
+D tc: 1.1997
+
+###Valid###
+BCE(x): 1.3961
+KL(s): 1.0216
+vae tc: -2.1873
+D tc_loss: 1.1998
+  2%|▏         | 31/2000 [01:38<1:39:50,  3.04s/it]Epoch 31
+###Train###
+BCE(x): 1.5075
+KL(u): 1.0320
+VAE tc: -2.1898
+D tc: 1.2005
+
+###Valid###
+BCE(x): 1.4231
+KL(s): 0.9897
+vae tc: -2.2030
+D tc_loss: 1.2061
+  2%|▏         | 32/2000 [01:41<1:39:03,  3.02s/it]Epoch 32
+###Train###
+BCE(x): 1.4940
+KL(u): 1.0465
+VAE tc: -2.1903
+D tc: 1.2007
+
+###Valid###
+BCE(x): 1.4396
+KL(s): 1.0129
+vae tc: -2.1989
+D tc_loss: 1.2043
+  2%|▏         | 33/2000 [01:44<1:38:29,  3.00s/it]Epoch 33
+###Train###
+BCE(x): 1.4989
+KL(u): 1.0293
+VAE tc: -2.1906
+D tc: 1.2009
+
+###Valid###
+BCE(x): 1.4627
+KL(s): 0.9833
+vae tc: -2.1914
+D tc_loss: 1.2018
+  2%|▏         | 34/2000 [01:47<1:38:50,  3.02s/it]Epoch 34
+###Train###
+BCE(x): 1.4874
+KL(u): 1.0439
+VAE tc: -2.1895
+D tc: 1.2003
+
+###Valid###
+BCE(x): 1.3949
+KL(s): 1.0464
+vae tc: -2.1891
+D tc_loss: 1.2005
+  2%|▏         | 35/2000 [01:50<1:38:21,  3.00s/it]Epoch 35
+###Train###
+BCE(x): 1.4733
+KL(u): 1.0506
+VAE tc: -2.1856
+D tc: 1.1985
+
+###Valid###
+BCE(x): 1.4585
+KL(s): 0.9694
+vae tc: -2.2042
+D tc_loss: 1.2058
+  2%|▏         | 36/2000 [01:54<1:38:51,  3.02s/it]Epoch 36
+###Train###
+BCE(x): 1.4842
+KL(u): 1.0371
+VAE tc: -2.1900
+D tc: 1.2005
+
+###Valid###
+BCE(x): 1.4493
+KL(s): 0.9931
+vae tc: -2.1952
+D tc_loss: 1.2027
+  2%|▏         | 37/2000 [01:57<1:39:57,  3.06s/it]Epoch 37
+###Train###
+BCE(x): 1.4836
+KL(u): 1.0462
+VAE tc: -2.1922
+D tc: 1.2016
+
+###Valid###
+BCE(x): 1.4743
+KL(s): 0.9693
+vae tc: -2.1879
+D tc_loss: 1.2004
+  2%|▏         | 38/2000 [02:00<1:39:13,  3.03s/it]Epoch 38
+###Train###
+BCE(x): 1.4775
+KL(u): 1.0356
+VAE tc: -2.1901
+D tc: 1.2007
+
+###Valid###
+BCE(x): 1.3885
+KL(s): 1.0306
+vae tc: -2.1891
+D tc_loss: 1.2010
+  2%|▏         | 39/2000 [02:03<1:41:06,  3.09s/it]Epoch 39
+###Train###
+BCE(x): 1.4775
+KL(u): 1.0606
+VAE tc: -2.1889
+D tc: 1.1999
+
+###Valid###
+BCE(x): 1.4131
+KL(s): 1.0313
+vae tc: -2.1730
+D tc_loss: 1.1938
+  2%|▏         | 40/2000 [02:06<1:40:54,  3.09s/it]Epoch 40
+###Train###
+BCE(x): 1.4709
+KL(u): 1.0443
+VAE tc: -2.1857
+D tc: 1.1986
+
+###Valid###
+BCE(x): 1.3896
+KL(s): 1.0296
+vae tc: -2.1958
+D tc_loss: 1.2025
+  2%|▏         | 41/2000 [02:09<1:39:42,  3.05s/it]Epoch 41
+###Train###
+BCE(x): 1.4591
+KL(u): 1.0576
+VAE tc: -2.1893
+D tc: 1.2003
+
+###Valid###
+BCE(x): 1.4557
+KL(s): 0.9958
+vae tc: -2.2136
+D tc_loss: 1.2101
+  2%|▏         | 42/2000 [02:12<1:39:24,  3.05s/it]Epoch 42
+###Train###
+BCE(x): 1.4575
+KL(u): 1.0634
+VAE tc: -2.1890
+D tc: 1.2000
+
+###Valid###
+BCE(x): 1.4087
+KL(s): 1.0153
+vae tc: -2.1961
+D tc_loss: 1.2031
+  2%|▏         | 43/2000 [02:15<1:39:15,  3.04s/it]Epoch 43
+###Train###
+BCE(x): 1.4570
+KL(u): 1.0607
+VAE tc: -2.1882
+D tc: 1.1998
+
+###Valid###
+BCE(x): 1.3774
+KL(s): 1.0505
+vae tc: -2.1903
+D tc_loss: 1.2005
+  2%|▏         | 44/2000 [02:18<1:38:51,  3.03s/it]Epoch 44
+###Train###
+BCE(x): 1.4509
+KL(u): 1.0748
+VAE tc: -2.1901
+D tc: 1.2006
+
+###Valid###
+BCE(x): 1.4240
+KL(s): 1.0092
+vae tc: -2.1933
+D tc_loss: 1.2026
+  2%|▏         | 45/2000 [02:21<1:39:27,  3.05s/it]Epoch 45
+###Train###
+BCE(x): 1.4426
+KL(u): 1.0839
+VAE tc: -2.1899
+D tc: 1.2004
+
+###Valid###
+BCE(x): 1.4048
+KL(s): 1.0314
+vae tc: -2.1729
+D tc_loss: 1.1943
+  2%|▏         | 46/2000 [02:24<1:39:00,  3.04s/it]Epoch 46
+###Train###
+BCE(x): 1.4401
+KL(u): 1.0681
+VAE tc: -2.1866
+D tc: 1.1989
+
+###Valid###
+BCE(x): 1.4003
+KL(s): 1.0167
+vae tc: -2.2100
+D tc_loss: 1.2090
+  2%|▏         | 47/2000 [02:27<1:38:51,  3.04s/it]Epoch 47
+###Train###
+BCE(x): 1.4310
+KL(u): 1.0847
+VAE tc: -2.1894
+D tc: 1.2002
+
+###Valid###
+BCE(x): 1.3564
+KL(s): 1.0507
+vae tc: -2.1882
+D tc_loss: 1.1998
+  2%|▏         | 48/2000 [02:30<1:39:35,  3.06s/it]Epoch 48
+###Train###
+BCE(x): 1.4456
+KL(u): 1.0795
+VAE tc: -2.1868
+D tc: 1.1991
+
+###Valid###
+BCE(x): 1.3380
+KL(s): 1.0841
+vae tc: -2.1826
+D tc_loss: 1.1972
+  2%|▏         | 49/2000 [02:33<1:40:36,  3.09s/it]Epoch 49
+###Train###
+BCE(x): 1.4248
+KL(u): 1.0903
+VAE tc: -2.1892
+D tc: 1.2002
+
+###Valid###
+BCE(x): 1.3335
+KL(s): 1.0854
+vae tc: -2.1808
+D tc_loss: 1.1969
+  2%|▎         | 50/2000 [02:37<1:49:03,  3.36s/it]Epoch 50
+###Train###
+BCE(x): 1.4143
+KL(u): 1.0974
+VAE tc: -2.1894
+D tc: 1.2002
+
+###Valid###
+BCE(x): 1.3579
+KL(s): 1.0441
+vae tc: -2.2005
+D tc_loss: 1.2050
+  3%|▎         | 51/2000 [02:41<1:50:05,  3.39s/it]Epoch 51
+###Train###
+BCE(x): 1.4151
+KL(u): 1.0776
+VAE tc: -2.1895
+D tc: 1.2003
+
+###Valid###
+BCE(x): 1.3931
+KL(s): 1.0585
+vae tc: -2.1933
+D tc_loss: 1.2024
+  3%|▎         | 52/2000 [02:45<1:55:23,  3.55s/it]Epoch 52
+###Train###
+BCE(x): 1.4188
+KL(u): 1.1016
+VAE tc: -2.1879
+D tc: 1.1994
+
+###Valid###
+BCE(x): 1.3377
+KL(s): 1.0750
+vae tc: -2.1892
+D tc_loss: 1.2002
+  3%|▎         | 53/2000 [02:49<1:58:18,  3.65s/it]Epoch 53
+###Train###
+BCE(x): 1.4100
+KL(u): 1.0958
+VAE tc: -2.1858
+D tc: 1.1987
+
+###Valid###
+BCE(x): 1.3785
+KL(s): 1.0219
+vae tc: -2.2251
+D tc_loss: 1.2151
+  3%|▎         | 54/2000 [02:53<2:03:05,  3.80s/it]Epoch 54
+###Train###
+BCE(x): 1.4092
+KL(u): 1.0996
+VAE tc: -2.1912
+D tc: 1.2010
+
+###Valid###
+BCE(x): 1.3726
+KL(s): 1.0794
+vae tc: -2.2006
+D tc_loss: 1.2052
+  3%|▎         | 55/2000 [02:57<2:04:03,  3.83s/it]Epoch 55
+###Train###
+BCE(x): 1.4087
+KL(u): 1.1065
+VAE tc: -2.1881
+D tc: 1.1997
+
+###Valid###
+BCE(x): 1.3454
+KL(s): 1.0965
+vae tc: -2.1939
+D tc_loss: 1.2021
+  3%|▎         | 56/2000 [03:01<2:08:39,  3.97s/it]Epoch 56
+###Train###
+BCE(x): 1.3994
+KL(u): 1.1028
+VAE tc: -2.1875
+D tc: 1.1993
+
+###Valid###
+BCE(x): 1.4000
+KL(s): 1.0640
+vae tc: -2.2022
+D tc_loss: 1.2052
+  3%|▎         | 57/2000 [03:05<2:05:35,  3.88s/it]Epoch 57
+###Train###
+BCE(x): 1.3916
+KL(u): 1.1094
+VAE tc: -2.1876
+D tc: 1.1994
+
+###Valid###
+BCE(x): 1.3514
+KL(s): 1.0696
+vae tc: -2.2035
+D tc_loss: 1.2062
+  3%|▎         | 58/2000 [03:08<2:03:29,  3.82s/it]Epoch 58
+###Train###
+BCE(x): 1.3929
+KL(u): 1.1084
+VAE tc: -2.1885
+D tc: 1.1997
+
+###Valid###
+BCE(x): 1.3982
+KL(s): 1.0179
+vae tc: -2.2078
+D tc_loss: 1.2080
+  3%|▎         | 59/2000 [03:12<1:57:50,  3.64s/it]Epoch 59
+###Train###
+BCE(x): 1.3978
+KL(u): 1.1028
+VAE tc: -2.1898
+D tc: 1.2004
+
+###Valid###
+BCE(x): 1.3370
+KL(s): 1.0741
+vae tc: -2.1841
+D tc_loss: 1.1983
+  3%|▎         | 60/2000 [03:15<1:52:11,  3.47s/it]Epoch 60
+###Train###
+BCE(x): 1.3971
+KL(u): 1.1022
+VAE tc: -2.1879
+D tc: 1.1996
+
+###Valid###
+BCE(x): 1.3423
+KL(s): 1.0580
+vae tc: -2.1850
+D tc_loss: 1.1987
+  3%|▎         | 61/2000 [03:18<1:53:13,  3.50s/it]Epoch 61
+###Train###
+BCE(x): 1.4064
+KL(u): 1.1237
+VAE tc: -2.1887
+D tc: 1.1999
+
+###Valid###
+BCE(x): 1.3245
+KL(s): 1.0876
+vae tc: -2.2076
+D tc_loss: 1.2083
+  3%|▎         | 62/2000 [03:22<1:54:51,  3.56s/it]Epoch 62
+###Train###
+BCE(x): 1.3876
+KL(u): 1.1059
+VAE tc: -2.1874
+D tc: 1.1992
+
+###Valid###
+BCE(x): 1.3095
+KL(s): 1.1075
+vae tc: -2.1881
+D tc_loss: 1.2001
+  3%|▎         | 63/2000 [03:25<1:51:42,  3.46s/it]Epoch 63
+###Train###
+BCE(x): 1.3855
+KL(u): 1.1105
+VAE tc: -2.1866
+D tc: 1.1990
+
+###Valid###
+BCE(x): 1.3205
+KL(s): 1.1023
+vae tc: -2.1927
+D tc_loss: 1.2015
+  3%|▎         | 64/2000 [03:28<1:50:23,  3.42s/it]Epoch 64
+###Train###
+BCE(x): 1.3910
+KL(u): 1.1256
+VAE tc: -2.1895
+D tc: 1.2002
+
+###Valid###
+BCE(x): 1.3489
+KL(s): 1.0848
+vae tc: -2.1690
+D tc_loss: 1.1920
+  3%|▎         | 65/2000 [03:32<1:48:09,  3.35s/it]Epoch 65
+###Train###
+BCE(x): 1.3972
+KL(u): 1.1092
+VAE tc: -2.1875
+D tc: 1.1993
+
+###Valid###
+BCE(x): 1.3096
+KL(s): 1.0950
+vae tc: -2.2334
+D tc_loss: 1.2178
+  3%|▎         | 66/2000 [03:35<1:45:52,  3.28s/it]Epoch 66
+###Train###
+BCE(x): 1.3867
+KL(u): 1.1106
+VAE tc: -2.1892
+D tc: 1.2001
+
+###Valid###
+BCE(x): 1.3465
+KL(s): 1.0620
+vae tc: -2.1900
+D tc_loss: 1.2005
+  3%|▎         | 67/2000 [03:38<1:43:49,  3.22s/it]Epoch 67
+###Train###
+BCE(x): 1.3905
+KL(u): 1.1241
+VAE tc: -2.1867
+D tc: 1.1990
+
+###Valid###
+BCE(x): 1.3303
+KL(s): 1.0854
+vae tc: -2.2097
+D tc_loss: 1.2085
+  3%|▎         | 68/2000 [03:41<1:43:29,  3.21s/it]Epoch 68
+###Train###
+BCE(x): 1.3836
+KL(u): 1.1156
+VAE tc: -2.1882
+D tc: 1.1997
+
+###Valid###
+BCE(x): 1.3522
+KL(s): 1.0830
+vae tc: -2.1939
+D tc_loss: 1.2021
+  3%|▎         | 69/2000 [03:44<1:43:32,  3.22s/it]Epoch 69
+###Train###
+BCE(x): 1.3797
+KL(u): 1.1286
+VAE tc: -2.1881
+D tc: 1.1996
+
+###Valid###
+BCE(x): 1.3751
+KL(s): 1.0433
+vae tc: -2.1870
+D tc_loss: 1.1991
+  4%|▎         | 70/2000 [03:47<1:43:26,  3.22s/it]Epoch 70
+###Train###
+BCE(x): 1.3875
+KL(u): 1.1098
+VAE tc: -2.1890
+D tc: 1.2001
+
+###Valid###
+BCE(x): 1.3532
+KL(s): 1.0812
+vae tc: -2.1946
+D tc_loss: 1.2023
+  4%|▎         | 71/2000 [03:51<1:43:32,  3.22s/it]Epoch 71
+###Train###
+BCE(x): 1.3784
+KL(u): 1.1142
+VAE tc: -2.1894
+D tc: 1.2003
+
+###Valid###
+BCE(x): 1.3706
+KL(s): 1.0630
+vae tc: -2.1666
+D tc_loss: 1.1908
+  4%|▎         | 72/2000 [03:54<1:42:15,  3.18s/it]Epoch 72
+###Train###
+BCE(x): 1.3775
+KL(u): 1.1224
+VAE tc: -2.1859
+D tc: 1.1986
+
+###Valid###
+BCE(x): 1.3751
+KL(s): 1.0659
+vae tc: -2.1892
+D tc_loss: 1.1999
+  4%|▎         | 73/2000 [03:57<1:41:55,  3.17s/it]Epoch 73
+###Train###
+BCE(x): 1.3765
+KL(u): 1.1230
+VAE tc: -2.1897
+D tc: 1.2003
+
+###Valid###
+BCE(x): 1.3264
+KL(s): 1.0915
+vae tc: -2.1840
+D tc_loss: 1.1980
+  4%|▎         | 74/2000 [04:00<1:42:18,  3.19s/it]Epoch 74
+###Train###
+BCE(x): 1.3766
+KL(u): 1.1403
+VAE tc: -2.1874
+D tc: 1.1993
+
+###Valid###
+BCE(x): 1.3309
+KL(s): 1.0759
+vae tc: -2.1732
+D tc_loss: 1.1939
+  4%|▍         | 75/2000 [04:03<1:42:42,  3.20s/it]Epoch 75
+###Train###
+BCE(x): 1.3718
+KL(u): 1.1219
+VAE tc: -2.1882
+D tc: 1.1997
+
+###Valid###
+BCE(x): 1.3610
+KL(s): 1.0787
+vae tc: -2.1936
+D tc_loss: 1.2021
+  4%|▍         | 76/2000 [04:07<1:43:45,  3.24s/it]Epoch 76
+###Train###
+BCE(x): 1.3785
+KL(u): 1.1176
+VAE tc: -2.1879
+D tc: 1.1995
+
+###Valid###
+BCE(x): 1.3769
+KL(s): 1.0270
+vae tc: -2.1807
+D tc_loss: 1.1967
+  4%|▍         | 77/2000 [04:10<1:43:40,  3.23s/it]Epoch 77
+###Train###
+BCE(x): 1.3615
+KL(u): 1.1309
+VAE tc: -2.1894
+D tc: 1.2002
+
+###Valid###
+BCE(x): 1.3487
+KL(s): 1.0589
+vae tc: -2.1808
+D tc_loss: 1.1966
+  4%|▍         | 78/2000 [04:13<1:44:17,  3.26s/it]Epoch 78
+###Train###
+BCE(x): 1.3772
+KL(u): 1.1141
+VAE tc: -2.1858
+D tc: 1.1985
+
+###Valid###
+BCE(x): 1.3274
+KL(s): 1.1052
+vae tc: -2.1742
+D tc_loss: 1.1945
+  4%|▍         | 79/2000 [04:17<1:44:05,  3.25s/it]Epoch 79
+###Train###
+BCE(x): 1.3628
+KL(u): 1.1477
+VAE tc: -2.1883
+D tc: 1.1997
+
+###Valid###
+BCE(x): 1.2781
+KL(s): 1.1205
+vae tc: -2.1917
+D tc_loss: 1.2015
+  4%|▍         | 80/2000 [04:20<1:42:39,  3.21s/it]Epoch 80
+###Train###
+BCE(x): 1.3643
+KL(u): 1.1356
+VAE tc: -2.1868
+D tc: 1.1990
+
+###Valid###
+BCE(x): 1.3023
+KL(s): 1.1224
+vae tc: -2.2103
+D tc_loss: 1.2092
+  4%|▍         | 81/2000 [04:23<1:42:38,  3.21s/it]Epoch 81
+###Train###
+BCE(x): 1.3709
+KL(u): 1.1538
+VAE tc: -2.1870
+D tc: 1.1991
+
+###Valid###
+BCE(x): 1.3252
+KL(s): 1.0858
+vae tc: -2.2107
+D tc_loss: 1.2097
+  4%|▍         | 82/2000 [04:26<1:44:23,  3.27s/it]Epoch 82
+###Train###
+BCE(x): 1.3621
+KL(u): 1.1376
+VAE tc: -2.1877
+D tc: 1.1994
+
+###Valid###
+BCE(x): 1.3530
+KL(s): 1.0678
+vae tc: -2.2110
+D tc_loss: 1.2093
+  4%|▍         | 83/2000 [04:30<1:49:21,  3.42s/it]Epoch 83
+###Train###
+BCE(x): 1.3650
+KL(u): 1.1364
+VAE tc: -2.1871
+D tc: 1.1992
+
+###Valid###
+BCE(x): 1.3266
+KL(s): 1.0869
+vae tc: -2.1876
+D tc_loss: 1.1996
+  4%|▍         | 84/2000 [04:33<1:46:44,  3.34s/it]Epoch 84
+###Train###
+BCE(x): 1.3626
+KL(u): 1.1405
+VAE tc: -2.1852
+D tc: 1.1982
+
+###Valid###
+BCE(x): 1.3185
+KL(s): 1.0837
+vae tc: -2.2158
+D tc_loss: 1.2114
+time elapsed: 4.6138min
+  4%|▍         | 84/2000 [04:36<1:45:14,  3.30s/it]
+best epoch for loss is 53
+
+(factual) chi squared distance is: -0.0075
+(counter) chi squared distance is: -0.0006
+(whole) chi squared distance is: -0.0051
+mean squared error of Linear Regression -->    0.8828
+(factual) chi squared distance is: -0.0075
+(counter) chi squared distance is: -0.0006
+(whole) chi squared distance is: -0.0051
+mean squared error of Linear Regression -->    0.8713
+now best epoch is 0, best loss is 1e+20, loss check is 0.014436487117017175
+loss check < best loss?	True
+best epoch update by loss, epoch is  0
+time elapsed: 0.0774min
+now best epoch is 0, best loss is 0.014436487117017175, loss check is 0.010027902232446272
+loss check < best loss?	True
+best epoch update by loss, epoch is  1
+time elapsed: 0.1405min
+now best epoch is 1, best loss is 0.010027902232446272, loss check is 0.00824683752832417
+loss check < best loss?	True
+best epoch update by loss, epoch is  2
+time elapsed: 0.2018min
+now best epoch is 2, best loss is 0.00824683752832417, loss check is 0.007592469604259349
+loss check < best loss?	True
+best epoch update by loss, epoch is  3
+time elapsed: 0.2521min
+now best epoch is 3, best loss is 0.007592469604259349, loss check is 0.007285415921095261
+loss check < best loss?	True
+best epoch update by loss, epoch is  4
+time elapsed: 0.3020min
+now best epoch is 4, best loss is 0.007285415921095261, loss check is 0.006971737587873188
+loss check < best loss?	True
+best epoch update by loss, epoch is  5
+time elapsed: 0.3540min
+now best epoch is 5, best loss is 0.006971737587873188, loss check is 0.0069183016682283875
+loss check < best loss?	True
+best epoch update by loss, epoch is  6
+time elapsed: 0.4041min
+now best epoch is 6, best loss is 0.0069183016682283875, loss check is 0.006841441547175841
+loss check < best loss?	True
+best epoch update by loss, epoch is  7
+time elapsed: 0.4553min
+now best epoch is 7, best loss is 0.006841441547175841, loss check is 0.006895662626031891
+loss check < best loss?	False
+time elapsed: 0.5061min
+now best epoch is 7, best loss is 0.006841441547175841, loss check is 0.006897913118522612
+loss check < best loss?	False
+time elapsed: 0.5608min
+now best epoch is 7, best loss is 0.006841441547175841, loss check is 0.006754506244304914
+loss check < best loss?	True
+best epoch update by loss, epoch is  10
+time elapsed: 0.6164min
+now best epoch is 10, best loss is 0.006754506244304914, loss check is 0.006644658316926925
+loss check < best loss?	True
+best epoch update by loss, epoch is  11
+time elapsed: 0.6686min
+now best epoch is 11, best loss is 0.006644658316926925, loss check is 0.006644084454676929
+loss check < best loss?	True
+best epoch update by loss, epoch is  12
+time elapsed: 0.7200min
+now best epoch is 12, best loss is 0.006644084454676929, loss check is 0.0067183532644817185
+loss check < best loss?	False
+time elapsed: 0.7724min
+now best epoch is 12, best loss is 0.006644084454676929, loss check is 0.006577734938451269
+loss check < best loss?	True
+best epoch update by loss, epoch is  14
+time elapsed: 0.8235min
+now best epoch is 14, best loss is 0.006577734938451269, loss check is 0.0066220079501214625
+loss check < best loss?	False
+time elapsed: 0.8733min
+now best epoch is 14, best loss is 0.006577734938451269, loss check is 0.00668510720783442
+loss check < best loss?	False
+time elapsed: 0.9242min
+now best epoch is 14, best loss is 0.006577734938451269, loss check is 0.006496876054206208
+loss check < best loss?	True
+best epoch update by loss, epoch is  17
+time elapsed: 0.9738min
+now best epoch is 17, best loss is 0.006496876054206208, loss check is 0.00651348786049887
+loss check < best loss?	False
+time elapsed: 1.0233min
+now best epoch is 17, best loss is 0.006496876054206208, loss check is 0.006533577539002802
+loss check < best loss?	False
+time elapsed: 1.0756min
+now best epoch is 17, best loss is 0.006496876054206208, loss check is 0.006552921078958988
+loss check < best loss?	False
+time elapsed: 1.1251min
+now best epoch is 17, best loss is 0.006496876054206208, loss check is 0.006547205023614569
+loss check < best loss?	False
+time elapsed: 1.1758min
+now best epoch is 17, best loss is 0.006496876054206208, loss check is 0.006407040912878519
+loss check < best loss?	True
+best epoch update by loss, epoch is  22
+time elapsed: 1.2480min
+now best epoch is 22, best loss is 0.006407040912878519, loss check is 0.006568827025657293
+loss check < best loss?	False
+time elapsed: 1.2982min
+now best epoch is 22, best loss is 0.006407040912878519, loss check is 0.006454036521933504
+loss check < best loss?	False
+time elapsed: 1.3477min
+now best epoch is 22, best loss is 0.006407040912878519, loss check is 0.006501525107082176
+loss check < best loss?	False
+time elapsed: 1.3986min
+now best epoch is 22, best loss is 0.006407040912878519, loss check is 0.006445834249900863
+loss check < best loss?	False
+time elapsed: 1.4483min
+now best epoch is 22, best loss is 0.006407040912878519, loss check is 0.00656564572690112
+loss check < best loss?	False
+time elapsed: 1.4991min
+now best epoch is 22, best loss is 0.006407040912878519, loss check is 0.0064364343594388715
+loss check < best loss?	False
+time elapsed: 1.5496min
+now best epoch is 22, best loss is 0.006407040912878519, loss check is 0.006433626143633636
+loss check < best loss?	False
+time elapsed: 1.5996min
+now best epoch is 22, best loss is 0.006407040912878519, loss check is 0.006372320345641824
+loss check < best loss?	True
+best epoch update by loss, epoch is  30
+time elapsed: 1.6500min
+now best epoch is 30, best loss is 0.006372320345641824, loss check is 0.006326026534093198
+loss check < best loss?	True
+best epoch update by loss, epoch is  31
+time elapsed: 1.6995min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.0064967931301673654
+loss check < best loss?	False
+time elapsed: 1.7490min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.006482427302934315
+loss check < best loss?	False
+time elapsed: 1.7997min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.006466514121069171
+loss check < best loss?	False
+time elapsed: 1.8492min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.00638654678991597
+loss check < best loss?	False
+time elapsed: 1.9002min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.006460958306206208
+loss check < best loss?	False
+time elapsed: 1.9525min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.006478253473323001
+loss check < best loss?	False
+time elapsed: 2.0023min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.00637489177043857
+loss check < best loss?	False
+time elapsed: 2.0561min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.006506102451111757
+loss check < best loss?	False
+time elapsed: 2.1074min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.006364649181357213
+loss check < best loss?	False
+time elapsed: 2.1570min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.006468549528051921
+loss check < best loss?	False
+time elapsed: 2.2074min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.0063836738405669705
+loss check < best loss?	False
+time elapsed: 2.2580min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.006409476551784184
+loss check < best loss?	False
+time elapsed: 2.3082min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.006426241308683209
+loss check < best loss?	False
+time elapsed: 2.3598min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.006472175290355884
+loss check < best loss?	False
+time elapsed: 2.4100min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.006331565170563816
+loss check < best loss?	False
+time elapsed: 2.4605min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.006326727292142695
+loss check < best loss?	False
+time elapsed: 2.5125min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.006398112976862893
+loss check < best loss?	False
+time elapsed: 2.5653min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.006387902159601135
+loss check < best loss?	False
+time elapsed: 2.6314min
+now best epoch is 31, best loss is 0.006326026534093198, loss check is 0.00628522149243996
+loss check < best loss?	True
+best epoch update by loss, epoch is  50
+time elapsed: 2.6892min
+now best epoch is 50, best loss is 0.00628522149243996, loss check is 0.006502309377284267
+loss check < best loss?	False
+time elapsed: 2.7549min
+now best epoch is 50, best loss is 0.00628522149243996, loss check is 0.006348777605120662
+loss check < best loss?	False
+time elapsed: 2.8192min
+now best epoch is 50, best loss is 0.00628522149243996, loss check is 0.006238204574519311
+loss check < best loss?	True
+best epoch update by loss, epoch is  53
+time elapsed: 2.8882min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006491660223799378
+loss check < best loss?	False
+time elapsed: 2.9533min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006461280701958077
+loss check < best loss?	False
+time elapsed: 3.0251min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006538978816719983
+loss check < best loss?	False
+time elapsed: 3.0861min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006359128338746819
+loss check < best loss?	False
+time elapsed: 3.1472min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006331776563264515
+loss check < best loss?	False
+time elapsed: 3.2012min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.00634988243834805
+loss check < best loss?	False
+time elapsed: 3.2523min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006304177574850978
+loss check < best loss?	False
+time elapsed: 3.3120min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006315546319702449
+loss check < best loss?	False
+time elapsed: 3.3733min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006368091561587484
+loss check < best loss?	False
+time elapsed: 3.4273min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006384143251079439
+loss check < best loss?	False
+time elapsed: 3.4828min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006468674003011101
+loss check < best loss?	False
+time elapsed: 3.5361min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006242179156662729
+loss check < best loss?	False
+time elapsed: 3.5881min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006330075697266437
+loss check < best loss?	False
+time elapsed: 3.6394min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006326881186466471
+loss check < best loss?	False
+time elapsed: 3.6926min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006433584455942659
+loss check < best loss?	False
+time elapsed: 3.7464min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.00637547301830311
+loss check < best loss?	False
+time elapsed: 3.7999min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.00642906284594875
+loss check < best loss?	False
+time elapsed: 3.8538min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006472162023603834
+loss check < best loss?	False
+time elapsed: 3.9054min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006465268414082906
+loss check < best loss?	False
+time elapsed: 3.9579min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006378606091731729
+loss check < best loss?	False
+time elapsed: 4.0115min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006350340661022191
+loss check < best loss?	False
+time elapsed: 4.0655min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.00645302871379791
+loss check < best loss?	False
+time elapsed: 4.1207min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006325869918033693
+loss check < best loss?	False
+time elapsed: 4.1746min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006341147034361911
+loss check < best loss?	False
+time elapsed: 4.2297min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006455508242401852
+loss check < best loss?	False
+time elapsed: 4.2837min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.0062857150703244605
+loss check < best loss?	False
+time elapsed: 4.3355min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006362914204761598
+loss check < best loss?	False
+time elapsed: 4.3890min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006306195461514785
+loss check < best loss?	False
+time elapsed: 4.4456min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006345793598012237
+loss check < best loss?	False
+time elapsed: 4.5088min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.006354636996095473
+loss check < best loss?	False
+time elapsed: 4.5614min
+now best epoch is 53, best loss is 0.006238204574519311, loss check is 0.00626105053701659
+loss check < best loss?	False
+**************************************************
+
+
+
+
+
+
+
+
+
+
+
+**************************************************
+Test Start
+**************************************************
+
+
+
+
+
+
+
+
+
+
+
+**************************************************
+Generate Data
+Summary
+Ground Truth, p(y=1): 0.10329025005975144
+Summary
+Ground Truth, p(y=1): 0.08658329901097837
+Summary
+Ground Truth, p(y=1): 0.08567232339411714
+**************************************************
+
+
+
+
+
+
+
+
+
+
+
+**************************************************
+L2 Classifier
+save path = /users/PAS2334/zzz/CF_Fairness/CF_Representation/DCEVAE/law_result/a_r_1.0_a_d_1.0_a_y_1.0_a_h_0.4_a_f_0.2_u_1.0_ur_3_ud_4_run_3_use_label_False
+**************************************************
+
+
+
+
+
+
+
+
+
+
+
+**************************************************
+Avg Classifier
+obseved data = [ 0.          0.          0.          0.          0.          0.
+  0.          1.         -0.1418082  -0.30563667]
+factual data = [ 0.          0.          0.          0.          0.          0.
+  0.          1.         -0.07370722  0.31215864]
+counter factual data = [ 0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00
+  0.0000000e+00  0.0000000e+00  0.0000000e+00  1.0000000e+00
+  4.8345815e-02 -5.9933215e-04]
+********************
+causal effect of the classifier
+cf = 0.1120
+o1 = 0.1131
+o2 = 0.1111
+**************************************************
+
+
+
+
+
+
+
+
+
+
+

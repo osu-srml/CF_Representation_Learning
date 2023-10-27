@@ -1,0 +1,11 @@
+usage: main.py [-h] [--n_epochs N_EPOCHS] [--batch_size BATCH_SIZE] [--lr LR]
+               [--loss_fn LOSS_FN] [--break_epoch BREAK_EPOCH]
+               [--act_fn ACT_FN] [--a_y A_Y] [--a_r A_R] [--a_d A_D]
+               [--a_f A_F] [--u_kl U_KL] [--u_dim U_DIM] [--run RUN]
+               [--gpu GPU] [--rep REP] [--use_label USE_LABEL]
+               [--use_real USE_REAL] [--normalize NORMALIZE] [--path PATH]
+               [--path_attribute PATH_ATTRIBUTE] [--retrain RETRAIN]
+               [--debug DEBUG] [--test TEST] [--tSNE TSNE] [--clf CLF]
+               [--balance BALANCE] [--early_stop EARLY_STOP]
+               [--dataset DATASET]
+main.py: error: unrecognized arguments: -normalize True

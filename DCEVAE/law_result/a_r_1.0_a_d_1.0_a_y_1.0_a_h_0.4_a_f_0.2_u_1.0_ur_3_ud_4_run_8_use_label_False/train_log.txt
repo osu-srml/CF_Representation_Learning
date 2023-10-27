@@ -1,0 +1,1331 @@
+Namespace(n_epochs=2000, batch_size=256, lr=0.001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1.0, a_r=1.0, a_d=1.0, a_a=1, a_f=0.2, a_h=0.4, u_kl=1.0, ur_dim=3, ud_dim=4, h_dim=100, use_label=False, use_real=False, multi_u=False, run=8, gpu=0, normalize=True, dataset='law', retrain=True, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=8, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/DCEVAE/law_result/a_r_1.0_a_d_1.0_a_y_1.0_a_h_0.4_a_f_0.2_u_1.0_ur_3_ud_4_run_8_use_label_False')
+This code uses cuda
+Epoch 0
+###Train###
+BCE(x): 5.6715
+KL(u): 0.3040
+VAE tc: -2.0132
+D tc: 1.1835
+
+###Valid###
+BCE(x): 3.7881
+KL(s): 0.4718
+vae tc: -2.2829
+D tc_loss: 1.2407
+Epoch 1
+###Train###
+BCE(x): 3.2686
+KL(u): 0.5096
+VAE tc: -2.2029
+D tc: 1.2082
+
+###Valid###
+BCE(x): 2.7026
+KL(s): 0.5169
+vae tc: -2.1769
+D tc_loss: 1.1969
+Epoch 2
+###Train###
+BCE(x): 2.5273
+KL(u): 0.5821
+VAE tc: -2.1923
+D tc: 1.2026
+
+###Valid###
+BCE(x): 2.2902
+KL(s): 0.5904
+vae tc: -2.1807
+D tc_loss: 1.1975
+Epoch 3
+###Train###
+BCE(x): 2.2098
+KL(u): 0.6475
+VAE tc: -2.1962
+D tc: 1.2039
+
+###Valid###
+BCE(x): 2.0837
+KL(s): 0.6579
+vae tc: -2.1927
+D tc_loss: 1.2022
+Epoch 4
+###Train###
+BCE(x): 2.0370
+KL(u): 0.7259
+VAE tc: -2.1969
+D tc: 1.2041
+
+###Valid###
+BCE(x): 1.9418
+KL(s): 0.7313
+vae tc: -2.1918
+D tc_loss: 1.2017
+Epoch 5
+###Train###
+BCE(x): 1.9357
+KL(u): 0.7618
+VAE tc: -2.1944
+D tc: 1.2029
+
+###Valid###
+BCE(x): 1.8181
+KL(s): 0.7908
+vae tc: -2.1911
+D tc_loss: 1.2013
+Epoch 6
+###Train###
+BCE(x): 1.8378
+KL(u): 0.8183
+VAE tc: -2.1964
+D tc: 1.2037
+
+###Valid###
+BCE(x): 1.7637
+KL(s): 0.8157
+vae tc: -2.1819
+D tc_loss: 1.1974
+Epoch 7
+###Train###
+BCE(x): 1.7938
+KL(u): 0.8454
+VAE tc: -2.1932
+D tc: 1.2022
+
+###Valid###
+BCE(x): 1.7412
+KL(s): 0.8166
+vae tc: -2.2071
+D tc_loss: 1.2080
+Epoch 8
+###Train###
+BCE(x): 1.7552
+KL(u): 0.8863
+VAE tc: -2.1948
+D tc: 1.2029
+
+###Valid###
+BCE(x): 1.7043
+KL(s): 0.8748
+vae tc: -2.2002
+D tc_loss: 1.2051
+Epoch 9
+###Train###
+BCE(x): 1.7071
+KL(u): 0.8882
+VAE tc: -2.1936
+D tc: 1.2024
+
+###Valid###
+BCE(x): 1.6619
+KL(s): 0.8521
+vae tc: -2.2016
+D tc_loss: 1.2057
+Epoch 10
+###Train###
+BCE(x): 1.6991
+KL(u): 0.9096
+VAE tc: -2.1938
+D tc: 1.2024
+
+###Valid###
+BCE(x): 1.6581
+KL(s): 0.9019
+vae tc: -2.1960
+D tc_loss: 1.2031
+Epoch 11
+###Train###
+BCE(x): 1.6767
+KL(u): 0.9303
+VAE tc: -2.1938
+D tc: 1.2024
+
+###Valid###
+BCE(x): 1.6209
+KL(s): 0.9031
+vae tc: -2.1855
+D tc_loss: 1.1990
+Epoch 12
+###Train###
+BCE(x): 1.6593
+KL(u): 0.9275
+VAE tc: -2.1903
+D tc: 1.2009
+
+###Valid###
+BCE(x): 1.6310
+KL(s): 0.9178
+vae tc: -2.1918
+D tc_loss: 1.2018
+Epoch 13
+###Train###
+BCE(x): 1.6356
+KL(u): 0.9482
+VAE tc: -2.1934
+D tc: 1.2022
+
+###Valid###
+BCE(x): 1.5718
+KL(s): 0.9236
+vae tc: -2.1844
+D tc_loss: 1.1982
+Epoch 14
+###Train###
+BCE(x): 1.6175
+KL(u): 0.9469
+VAE tc: -2.1926
+D tc: 1.2019
+
+###Valid###
+BCE(x): 1.5672
+KL(s): 0.9528
+vae tc: -2.1883
+D tc_loss: 1.2001
+Epoch 15
+###Train###
+BCE(x): 1.6048
+KL(u): 0.9515
+VAE tc: -2.1928
+D tc: 1.2020
+
+###Valid###
+BCE(x): 1.5606
+KL(s): 0.9173
+vae tc: -2.2028
+D tc_loss: 1.2055
+Epoch 16
+###Train###
+BCE(x): 1.5965
+KL(u): 0.9636
+VAE tc: -2.1921
+D tc: 1.2016
+
+###Valid###
+BCE(x): 1.5473
+KL(s): 0.9532
+vae tc: -2.1888
+D tc_loss: 1.2003
+Epoch 17
+###Train###
+BCE(x): 1.5787
+KL(u): 0.9703
+VAE tc: -2.1926
+D tc: 1.2019
+
+###Valid###
+BCE(x): 1.5446
+KL(s): 0.9530
+vae tc: -2.1864
+D tc_loss: 1.1993
+Epoch 18
+###Train###
+BCE(x): 1.5690
+KL(u): 0.9697
+VAE tc: -2.1908
+D tc: 1.2010
+
+###Valid###
+BCE(x): 1.5261
+KL(s): 0.9284
+vae tc: -2.1903
+D tc_loss: 1.2009
+Epoch 19
+###Train###
+BCE(x): 1.5732
+KL(u): 0.9902
+VAE tc: -2.1923
+D tc: 1.2017
+
+###Valid###
+BCE(x): 1.5206
+KL(s): 0.9407
+vae tc: -2.1887
+D tc_loss: 1.2003
+Epoch 20
+###Train###
+BCE(x): 1.5666
+KL(u): 0.9807
+VAE tc: -2.1928
+D tc: 1.2019
+
+###Valid###
+BCE(x): 1.5571
+KL(s): 0.9395
+vae tc: -2.1777
+D tc_loss: 1.1955
+Epoch 21
+###Train###
+BCE(x): 1.5556
+KL(u): 0.9938
+VAE tc: -2.1899
+D tc: 1.2005
+
+###Valid###
+BCE(x): 1.4651
+KL(s): 1.0098
+vae tc: -2.1874
+D tc_loss: 1.1996
+Epoch 22
+###Train###
+BCE(x): 1.5374
+KL(u): 1.0007
+VAE tc: -2.1926
+D tc: 1.2019
+
+###Valid###
+BCE(x): 1.4946
+KL(s): 0.9607
+vae tc: -2.1798
+D tc_loss: 1.1960
+Epoch 23
+###Train###
+BCE(x): 1.5273
+KL(u): 1.0117
+VAE tc: -2.1912
+D tc: 1.2013
+
+###Valid###
+BCE(x): 1.4994
+KL(s): 0.9700
+vae tc: -2.1850
+D tc_loss: 1.1985
+Epoch 24
+###Train###
+BCE(x): 1.5240
+KL(u): 1.0070
+VAE tc: -2.1906
+D tc: 1.2009
+
+###Valid###
+BCE(x): 1.4847
+KL(s): 0.9693
+vae tc: -2.1771
+D tc_loss: 1.1953
+Epoch 25
+###Train###
+BCE(x): 1.5318
+KL(u): 1.0045
+VAE tc: -2.1900
+D tc: 1.2006
+
+###Valid###
+BCE(x): 1.4580
+KL(s): 0.9837
+vae tc: -2.2018
+D tc_loss: 1.2052
+Epoch 26
+###Train###
+BCE(x): 1.5173
+KL(u): 1.0114
+VAE tc: -2.1909
+D tc: 1.2011
+
+###Valid###
+BCE(x): 1.4055
+KL(s): 1.0478
+vae tc: -2.1679
+D tc_loss: 1.1914
+Epoch 27
+###Train###
+BCE(x): 1.5114
+KL(u): 1.0272
+VAE tc: -2.1905
+D tc: 1.2008
+
+###Valid###
+BCE(x): 1.4298
+KL(s): 1.0288
+vae tc: -2.1823
+D tc_loss: 1.1977
+Epoch 28
+###Train###
+BCE(x): 1.4861
+KL(u): 1.0445
+VAE tc: -2.1902
+D tc: 1.2007
+
+###Valid###
+BCE(x): 1.4325
+KL(s): 1.0204
+vae tc: -2.1899
+D tc_loss: 1.2006
+Epoch 29
+###Train###
+BCE(x): 1.4910
+KL(u): 1.0236
+VAE tc: -2.1883
+D tc: 1.1998
+
+###Valid###
+BCE(x): 1.4579
+KL(s): 1.0031
+vae tc: -2.1838
+D tc_loss: 1.1977
+Epoch 30
+###Train###
+BCE(x): 1.4795
+KL(u): 1.0434
+VAE tc: -2.1890
+D tc: 1.2001
+
+###Valid###
+BCE(x): 1.4136
+KL(s): 1.0304
+vae tc: -2.1938
+D tc_loss: 1.2020
+Epoch 31
+###Train###
+BCE(x): 1.4733
+KL(u): 1.0367
+VAE tc: -2.1893
+D tc: 1.2003
+
+###Valid###
+BCE(x): 1.4273
+KL(s): 1.0129
+vae tc: -2.1834
+D tc_loss: 1.1981
+Epoch 32
+###Train###
+BCE(x): 1.4747
+KL(u): 1.0449
+VAE tc: -2.1893
+D tc: 1.2003
+
+###Valid###
+BCE(x): 1.4422
+KL(s): 0.9995
+vae tc: -2.1933
+D tc_loss: 1.2014
+Epoch 33
+###Train###
+BCE(x): 1.4667
+KL(u): 1.0435
+VAE tc: -2.1881
+D tc: 1.1996
+
+###Valid###
+BCE(x): 1.4222
+KL(s): 1.0121
+vae tc: -2.2047
+D tc_loss: 1.2068
+Epoch 34
+###Train###
+BCE(x): 1.4581
+KL(u): 1.0572
+VAE tc: -2.1902
+D tc: 1.2008
+
+###Valid###
+BCE(x): 1.4045
+KL(s): 1.0640
+vae tc: -2.1818
+D tc_loss: 1.1967
+Epoch 35
+###Train###
+BCE(x): 1.4514
+KL(u): 1.0590
+VAE tc: -2.1896
+D tc: 1.2003
+
+###Valid###
+BCE(x): 1.4078
+KL(s): 1.0217
+vae tc: -2.1874
+D tc_loss: 1.1990
+Epoch 36
+###Train###
+BCE(x): 1.4484
+KL(u): 1.0610
+VAE tc: -2.1870
+D tc: 1.1991
+
+###Valid###
+BCE(x): 1.3977
+KL(s): 1.0443
+vae tc: -2.1881
+D tc_loss: 1.1995
+Epoch 37
+###Train###
+BCE(x): 1.4490
+KL(u): 1.0683
+VAE tc: -2.1900
+D tc: 1.2006
+
+###Valid###
+BCE(x): 1.4155
+KL(s): 1.0245
+vae tc: -2.1685
+D tc_loss: 1.1913
+Epoch 38
+###Train###
+BCE(x): 1.4453
+KL(u): 1.0699
+VAE tc: -2.1885
+D tc: 1.1998
+
+###Valid###
+BCE(x): 1.4147
+KL(s): 1.0266
+vae tc: -2.1764
+D tc_loss: 1.1950
+Epoch 39
+###Train###
+BCE(x): 1.4496
+KL(u): 1.0781
+VAE tc: -2.1898
+D tc: 1.2004
+
+###Valid###
+BCE(x): 1.3962
+KL(s): 1.0483
+vae tc: -2.1742
+D tc_loss: 1.1938
+Epoch 40
+###Train###
+BCE(x): 1.4286
+KL(u): 1.0778
+VAE tc: -2.1881
+D tc: 1.1997
+
+###Valid###
+BCE(x): 1.4141
+KL(s): 1.0250
+vae tc: -2.2063
+D tc_loss: 1.2070
+Epoch 41
+###Train###
+BCE(x): 1.4363
+KL(u): 1.0629
+VAE tc: -2.1873
+D tc: 1.1992
+
+###Valid###
+BCE(x): 1.3919
+KL(s): 1.0694
+vae tc: -2.1819
+D tc_loss: 1.1973
+Epoch 42
+###Train###
+BCE(x): 1.4329
+KL(u): 1.0710
+VAE tc: -2.1894
+D tc: 1.2003
+
+###Valid###
+BCE(x): 1.4083
+KL(s): 1.0266
+vae tc: -2.1869
+D tc_loss: 1.1990
+Epoch 43
+###Train###
+BCE(x): 1.4353
+KL(u): 1.0848
+VAE tc: -2.1906
+D tc: 1.2008
+
+###Valid###
+BCE(x): 1.4065
+KL(s): 1.0480
+vae tc: -2.1665
+D tc_loss: 1.1910
+Epoch 44
+###Train###
+BCE(x): 1.4358
+KL(u): 1.0770
+VAE tc: -2.1880
+D tc: 1.1995
+
+###Valid###
+BCE(x): 1.4034
+KL(s): 1.0219
+vae tc: -2.1884
+D tc_loss: 1.1993
+Epoch 45
+###Train###
+BCE(x): 1.4455
+KL(u): 1.0872
+VAE tc: -2.1877
+D tc: 1.1995
+
+###Valid###
+BCE(x): 1.3605
+KL(s): 1.0725
+vae tc: -2.2029
+D tc_loss: 1.2053
+Epoch 46
+###Train###
+BCE(x): 1.4369
+KL(u): 1.0750
+VAE tc: -2.1886
+D tc: 1.1998
+
+###Valid###
+BCE(x): 1.3717
+KL(s): 1.0758
+vae tc: -2.1906
+D tc_loss: 1.2005
+Epoch 47
+###Train###
+BCE(x): 1.4286
+KL(u): 1.0790
+VAE tc: -2.1890
+D tc: 1.1999
+
+###Valid###
+BCE(x): 1.4247
+KL(s): 1.0308
+vae tc: -2.1779
+D tc_loss: 1.1957
+Epoch 48
+###Train###
+BCE(x): 1.4299
+KL(u): 1.0622
+VAE tc: -2.1882
+D tc: 1.1998
+
+###Valid###
+BCE(x): 1.3566
+KL(s): 1.0747
+vae tc: -2.1726
+D tc_loss: 1.1935
+Epoch 49
+###Train###
+BCE(x): 1.4245
+KL(u): 1.0770
+VAE tc: -2.1894
+D tc: 1.2002
+
+###Valid###
+BCE(x): 1.3335
+KL(s): 1.1086
+vae tc: -2.1580
+D tc_loss: 1.1872
+Epoch 50
+###Train###
+BCE(x): 1.4121
+KL(u): 1.0978
+VAE tc: -2.1870
+D tc: 1.1991
+
+###Valid###
+BCE(x): 1.3769
+KL(s): 1.0653
+vae tc: -2.1926
+D tc_loss: 1.2018
+Epoch 51
+###Train###
+BCE(x): 1.4199
+KL(u): 1.0925
+VAE tc: -2.1896
+D tc: 1.2004
+
+###Valid###
+BCE(x): 1.3500
+KL(s): 1.0638
+vae tc: -2.1731
+D tc_loss: 1.1939
+Epoch 52
+###Train###
+BCE(x): 1.4195
+KL(u): 1.0822
+VAE tc: -2.1891
+D tc: 1.2001
+
+###Valid###
+BCE(x): 1.3747
+KL(s): 1.0588
+vae tc: -2.1759
+D tc_loss: 1.1946
+Epoch 53
+###Train###
+BCE(x): 1.4085
+KL(u): 1.0938
+VAE tc: -2.1867
+D tc: 1.1992
+
+###Valid###
+BCE(x): 1.3850
+KL(s): 1.0492
+vae tc: -2.2051
+D tc_loss: 1.2061
+Epoch 54
+###Train###
+BCE(x): 1.4018
+KL(u): 1.0839
+VAE tc: -2.1887
+D tc: 1.1998
+
+###Valid###
+BCE(x): 1.4077
+KL(s): 1.0414
+vae tc: -2.1805
+D tc_loss: 1.1963
+Epoch 55
+###Train###
+BCE(x): 1.4118
+KL(u): 1.0907
+VAE tc: -2.1893
+D tc: 1.2002
+
+###Valid###
+BCE(x): 1.3818
+KL(s): 1.0541
+vae tc: -2.1696
+D tc_loss: 1.1920
+Epoch 56
+###Train###
+BCE(x): 1.4158
+KL(u): 1.0989
+VAE tc: -2.1894
+D tc: 1.2003
+
+###Valid###
+BCE(x): 1.4174
+KL(s): 1.0212
+vae tc: -2.1701
+D tc_loss: 1.1923
+Epoch 57
+###Train###
+BCE(x): 1.4009
+KL(u): 1.0928
+VAE tc: -2.1855
+D tc: 1.1984
+
+###Valid###
+BCE(x): 1.3445
+KL(s): 1.0763
+vae tc: -2.1754
+D tc_loss: 1.1943
+Epoch 58
+###Train###
+BCE(x): 1.3922
+KL(u): 1.1082
+VAE tc: -2.1883
+D tc: 1.1996
+
+###Valid###
+BCE(x): 1.3899
+KL(s): 1.0478
+vae tc: -2.1899
+D tc_loss: 1.2003
+Epoch 59
+###Train###
+BCE(x): 1.3988
+KL(u): 1.0966
+VAE tc: -2.1892
+D tc: 1.2001
+
+###Valid###
+BCE(x): 1.3918
+KL(s): 1.0602
+vae tc: -2.1588
+D tc_loss: 1.1877
+Epoch 60
+###Train###
+BCE(x): 1.3903
+KL(u): 1.1066
+VAE tc: -2.1878
+D tc: 1.1995
+
+###Valid###
+BCE(x): 1.3568
+KL(s): 1.0791
+vae tc: -2.1659
+D tc_loss: 1.1907
+Epoch 61
+###Train###
+BCE(x): 1.3795
+KL(u): 1.1159
+VAE tc: -2.1894
+D tc: 1.2002
+
+###Valid###
+BCE(x): 1.3443
+KL(s): 1.1055
+vae tc: -2.1603
+D tc_loss: 1.1883
+Epoch 62
+###Train###
+BCE(x): 1.3892
+KL(u): 1.1093
+VAE tc: -2.1894
+D tc: 1.2003
+
+###Valid###
+BCE(x): 1.3071
+KL(s): 1.1187
+vae tc: -2.1635
+D tc_loss: 1.1891
+Epoch 63
+###Train###
+BCE(x): 1.3721
+KL(u): 1.1037
+VAE tc: -2.1892
+D tc: 1.2002
+
+###Valid###
+BCE(x): 1.3542
+KL(s): 1.0663
+vae tc: -2.1815
+D tc_loss: 1.1971
+Epoch 64
+###Train###
+BCE(x): 1.3942
+KL(u): 1.1105
+VAE tc: -2.1883
+D tc: 1.1997
+
+###Valid###
+BCE(x): 1.3199
+KL(s): 1.1057
+vae tc: -2.1631
+D tc_loss: 1.1890
+Epoch 65
+###Train###
+BCE(x): 1.3897
+KL(u): 1.1277
+VAE tc: -2.1876
+D tc: 1.1995
+
+###Valid###
+BCE(x): 1.3053
+KL(s): 1.0988
+vae tc: -2.1872
+D tc_loss: 1.1988
+Epoch 66
+###Train###
+BCE(x): 1.3713
+KL(u): 1.1097
+VAE tc: -2.1874
+D tc: 1.1992
+
+###Valid###
+BCE(x): 1.3304
+KL(s): 1.0788
+vae tc: -2.1774
+D tc_loss: 1.1950
+Epoch 67
+###Train###
+BCE(x): 1.3826
+KL(u): 1.1021
+VAE tc: -2.1867
+D tc: 1.1990
+
+###Valid###
+BCE(x): 1.3359
+KL(s): 1.0928
+vae tc: -2.2067
+D tc_loss: 1.2069
+Epoch 68
+###Train###
+BCE(x): 1.3730
+KL(u): 1.1197
+VAE tc: -2.1900
+D tc: 1.2004
+
+###Valid###
+BCE(x): 1.3270
+KL(s): 1.1114
+vae tc: -2.1669
+D tc_loss: 1.1910
+Epoch 69
+###Train###
+BCE(x): 1.3867
+KL(u): 1.1173
+VAE tc: -2.1878
+D tc: 1.1994
+
+###Valid###
+BCE(x): 1.2849
+KL(s): 1.1335
+vae tc: -2.1451
+D tc_loss: 1.1826
+Epoch 70
+###Train###
+BCE(x): 1.3565
+KL(u): 1.1331
+VAE tc: -2.1866
+D tc: 1.1990
+
+###Valid###
+BCE(x): 1.3164
+KL(s): 1.0963
+vae tc: -2.1665
+D tc_loss: 1.1905
+Epoch 71
+###Train###
+BCE(x): 1.3654
+KL(u): 1.1192
+VAE tc: -2.1871
+D tc: 1.1990
+
+###Valid###
+BCE(x): 1.3110
+KL(s): 1.1202
+vae tc: -2.1611
+D tc_loss: 1.1887
+Epoch 72
+###Train###
+BCE(x): 1.3553
+KL(u): 1.1342
+VAE tc: -2.1848
+D tc: 1.1980
+
+###Valid###
+BCE(x): 1.3142
+KL(s): 1.1070
+vae tc: -2.1846
+D tc_loss: 1.1980
+Epoch 73
+###Train###
+BCE(x): 1.3897
+KL(u): 1.1312
+VAE tc: -2.1868
+D tc: 1.1990
+
+###Valid###
+BCE(x): 1.3116
+KL(s): 1.1107
+vae tc: -2.1984
+D tc_loss: 1.2033
+Epoch 74
+###Train###
+BCE(x): 1.3701
+KL(u): 1.1298
+VAE tc: -2.1879
+D tc: 1.1996
+
+###Valid###
+BCE(x): 1.3311
+KL(s): 1.1013
+vae tc: -2.1662
+D tc_loss: 1.1907
+Epoch 75
+###Train###
+BCE(x): 1.3782
+KL(u): 1.1281
+VAE tc: -2.1889
+D tc: 1.2000
+
+###Valid###
+BCE(x): 1.3351
+KL(s): 1.0968
+vae tc: -2.2004
+D tc_loss: 1.2044
+Epoch 76
+###Train###
+BCE(x): 1.3619
+KL(u): 1.1263
+VAE tc: -2.1871
+D tc: 1.1991
+
+###Valid###
+BCE(x): 1.3593
+KL(s): 1.0845
+vae tc: -2.1756
+D tc_loss: 1.1940
+Epoch 77
+###Train###
+BCE(x): 1.3685
+KL(u): 1.1241
+VAE tc: -2.1890
+D tc: 1.2000
+
+###Valid###
+BCE(x): 1.3214
+KL(s): 1.1086
+vae tc: -2.1808
+D tc_loss: 1.1965
+Epoch 78
+###Train###
+BCE(x): 1.3608
+KL(u): 1.1244
+VAE tc: -2.1879
+D tc: 1.1995
+
+###Valid###
+BCE(x): 1.2709
+KL(s): 1.1229
+vae tc: -2.2140
+D tc_loss: 1.2099
+Epoch 79
+###Train###
+BCE(x): 1.3544
+KL(u): 1.1341
+VAE tc: -2.1894
+D tc: 1.2003
+
+###Valid###
+BCE(x): 1.2842
+KL(s): 1.1487
+vae tc: -2.1801
+D tc_loss: 1.1958
+Epoch 80
+###Train###
+BCE(x): 1.3546
+KL(u): 1.1357
+VAE tc: -2.1883
+D tc: 1.1997
+
+###Valid###
+BCE(x): 1.3227
+KL(s): 1.0959
+vae tc: -2.1610
+D tc_loss: 1.1883
+Epoch 81
+###Train###
+BCE(x): 1.3527
+KL(u): 1.1468
+VAE tc: -2.1871
+D tc: 1.1992
+
+###Valid###
+BCE(x): 1.2433
+KL(s): 1.1637
+vae tc: -2.1716
+D tc_loss: 1.1930
+Epoch 82
+###Train###
+BCE(x): 1.3552
+KL(u): 1.1445
+VAE tc: -2.1884
+D tc: 1.1998
+
+###Valid###
+BCE(x): 1.3217
+KL(s): 1.1152
+vae tc: -2.1550
+D tc_loss: 1.1861
+Epoch 83
+###Train###
+BCE(x): 1.3504
+KL(u): 1.1438
+VAE tc: -2.1886
+D tc: 1.1998
+
+###Valid###
+BCE(x): 1.2834
+KL(s): 1.1340
+vae tc: -2.1633
+D tc_loss: 1.1894
+Epoch 84
+###Train###
+BCE(x): 1.3459
+KL(u): 1.1483
+VAE tc: -2.1858
+D tc: 1.1986
+
+###Valid###
+BCE(x): 1.2887
+KL(s): 1.1405
+vae tc: -2.1644
+D tc_loss: 1.1898
+Epoch 85
+###Train###
+BCE(x): 1.3449
+KL(u): 1.1444
+VAE tc: -2.1887
+D tc: 1.1998
+
+###Valid###
+BCE(x): 1.3230
+KL(s): 1.0863
+vae tc: -2.1469
+D tc_loss: 1.1832
+Epoch 86
+###Train###
+BCE(x): 1.3374
+KL(u): 1.1576
+VAE tc: -2.1874
+D tc: 1.1993
+
+###Valid###
+BCE(x): 1.2716
+KL(s): 1.1199
+vae tc: -2.1832
+D tc_loss: 1.1977
+Epoch 87
+###Train###
+BCE(x): 1.3403
+KL(u): 1.1430
+VAE tc: -2.1872
+D tc: 1.1991
+
+###Valid###
+BCE(x): 1.3397
+KL(s): 1.0971
+vae tc: -2.1916
+D tc_loss: 1.2006
+Epoch 88
+###Train###
+BCE(x): 1.3373
+KL(u): 1.1261
+VAE tc: -2.1873
+D tc: 1.1993
+
+###Valid###
+BCE(x): 1.2493
+KL(s): 1.1736
+vae tc: -2.1875
+D tc_loss: 1.1987
+Epoch 89
+###Train###
+BCE(x): 1.3308
+KL(u): 1.1442
+VAE tc: -2.1870
+D tc: 1.1990
+
+###Valid###
+BCE(x): 1.3674
+KL(s): 1.0643
+vae tc: -2.1601
+D tc_loss: 1.1882
+Epoch 90
+###Train###
+BCE(x): 1.3473
+KL(u): 1.1583
+VAE tc: -2.1865
+D tc: 1.1989
+
+###Valid###
+BCE(x): 1.2858
+KL(s): 1.1608
+vae tc: -2.1883
+D tc_loss: 1.1991
+Epoch 91
+###Train###
+BCE(x): 1.3325
+KL(u): 1.1408
+VAE tc: -2.1885
+D tc: 1.1997
+
+###Valid###
+BCE(x): 1.2721
+KL(s): 1.1171
+vae tc: -2.1778
+D tc_loss: 1.1949
+Epoch 92
+###Train###
+BCE(x): 1.3353
+KL(u): 1.1533
+VAE tc: -2.1871
+D tc: 1.1992
+
+###Valid###
+BCE(x): 1.2907
+KL(s): 1.1044
+vae tc: -2.2085
+D tc_loss: 1.2076
+Epoch 93
+###Train###
+BCE(x): 1.3159
+KL(u): 1.1530
+VAE tc: -2.1861
+D tc: 1.1985
+
+###Valid###
+BCE(x): 1.3261
+KL(s): 1.1315
+vae tc: -2.1961
+D tc_loss: 1.2026
+Epoch 94
+###Train###
+BCE(x): 1.3316
+KL(u): 1.1571
+VAE tc: -2.1878
+D tc: 1.1995
+
+###Valid###
+BCE(x): 1.3107
+KL(s): 1.1183
+vae tc: -2.1746
+D tc_loss: 1.1939
+Epoch 95
+###Train###
+BCE(x): 1.3153
+KL(u): 1.1527
+VAE tc: -2.1866
+D tc: 1.1989
+
+###Valid###
+BCE(x): 1.2950
+KL(s): 1.1179
+vae tc: -2.1908
+D tc_loss: 1.2004
+Epoch 96
+###Train###
+BCE(x): 1.3163
+KL(u): 1.1686
+VAE tc: -2.1889
+D tc: 1.1999
+
+###Valid###
+BCE(x): 1.3280
+KL(s): 1.1310
+vae tc: -2.1758
+D tc_loss: 1.1942
+Epoch 97
+###Train###
+BCE(x): 1.3230
+KL(u): 1.1651
+VAE tc: -2.1863
+D tc: 1.1988
+
+###Valid###
+BCE(x): 1.2883
+KL(s): 1.1219
+vae tc: -2.1856
+D tc_loss: 1.1984
+Epoch 98
+###Train###
+BCE(x): 1.3271
+KL(u): 1.1569
+VAE tc: -2.1899
+D tc: 1.2004
+
+###Valid###
+BCE(x): 1.2828
+KL(s): 1.1329
+vae tc: -2.1754
+D tc_loss: 1.1942
+Epoch 99
+###Train###
+BCE(x): 1.3268
+KL(u): 1.1578
+VAE tc: -2.1869
+D tc: 1.1991
+
+###Valid###
+BCE(x): 1.2628
+KL(s): 1.1626
+vae tc: -2.2084
+D tc_loss: 1.2076
+Epoch 100
+###Train###
+BCE(x): 1.3236
+KL(u): 1.1715
+VAE tc: -2.1884
+D tc: 1.1997
+
+###Valid###
+BCE(x): 1.2297
+KL(s): 1.1837
+vae tc: -2.1925
+D tc_loss: 1.2011
+Epoch 101
+###Train###
+BCE(x): 1.3216
+KL(u): 1.1727
+VAE tc: -2.1857
+D tc: 1.1985
+
+###Valid###
+BCE(x): 1.2146
+KL(s): 1.1864
+vae tc: -2.2010
+D tc_loss: 1.2046
+Epoch 102
+###Train###
+BCE(x): 1.3310
+KL(u): 1.1635
+VAE tc: -2.1875
+D tc: 1.1992
+
+###Valid###
+BCE(x): 1.2970
+KL(s): 1.1334
+vae tc: -2.1951
+D tc_loss: 1.2021
+Epoch 103
+###Train###
+BCE(x): 1.3204
+KL(u): 1.1596
+VAE tc: -2.1889
+D tc: 1.1999
+
+###Valid###
+BCE(x): 1.3431
+KL(s): 1.0820
+vae tc: -2.1670
+D tc_loss: 1.1913
+Epoch 104
+###Train###
+BCE(x): 1.3170
+KL(u): 1.1704
+VAE tc: -2.1869
+D tc: 1.1991
+
+###Valid###
+BCE(x): 1.2735
+KL(s): 1.1326
+vae tc: -2.1973
+D tc_loss: 1.2030
+Epoch 105
+###Train###
+BCE(x): 1.3212
+KL(u): 1.1507
+VAE tc: -2.1879
+D tc: 1.1995
+
+###Valid###
+BCE(x): 1.3009
+KL(s): 1.1303
+vae tc: -2.1903
+D tc_loss: 1.2004
+Epoch 106
+###Train###
+BCE(x): 1.3204
+KL(u): 1.1674
+VAE tc: -2.1860
+D tc: 1.1986
+
+###Valid###
+BCE(x): 1.2602
+KL(s): 1.1565
+vae tc: -2.2092
+D tc_loss: 1.2077
+Epoch 107
+###Train###
+BCE(x): 1.3091
+KL(u): 1.1818
+VAE tc: -2.1871
+D tc: 1.1991
+
+###Valid###
+BCE(x): 1.2400
+KL(s): 1.1628
+vae tc: -2.1773
+D tc_loss: 1.1948
+Epoch 108
+###Train###
+BCE(x): 1.3180
+KL(u): 1.1675
+VAE tc: -2.1883
+D tc: 1.1997
+
+###Valid###
+BCE(x): 1.3049
+KL(s): 1.1114
+vae tc: -2.2061
+D tc_loss: 1.2066
+Epoch 109
+###Train###
+BCE(x): 1.3099
+KL(u): 1.1640
+VAE tc: -2.1885
+D tc: 1.1996
+
+###Valid###
+BCE(x): 1.2880
+KL(s): 1.1228
+vae tc: -2.1551
+D tc_loss: 1.1860
+time elapsed: 7.0227min
+best epoch for loss is 78
+
+Namespace(n_epochs=2000, batch_size=256, lr=0.001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1.0, a_r=1.0, a_d=1.0, a_a=1, a_f=0.2, a_h=0.4, u_kl=1.0, ur_dim=3, ud_dim=4, h_dim=100, use_label=False, use_real=False, multi_u=False, run=8, gpu=0, normalize=True, dataset='law', retrain=False, path=False, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=8, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/DCEVAE/law_result/a_r_1.0_a_d_1.0_a_y_1.0_a_h_0.4_a_f_0.2_u_1.0_ur_3_ud_4_run_8_use_label_False')
+This code uses cuda
+Namespace(n_epochs=2000, batch_size=256, lr=0.001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1.0, a_r=1.0, a_d=1.0, a_a=1, a_f=0.2, a_h=0.4, u_kl=1.0, ur_dim=3, ud_dim=4, h_dim=100, use_label=False, use_real=False, multi_u=False, run=8, gpu=0, normalize=True, dataset='law', retrain=False, path=True, path_attribute='GPA', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=8, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/DCEVAE/law_result/a_r_1.0_a_d_1.0_a_y_1.0_a_h_0.4_a_f_0.2_u_1.0_ur_3_ud_4_run_8_use_label_False')
+This code uses cuda
+Namespace(n_epochs=2000, batch_size=256, lr=0.001, loss_fn='BCE', break_epoch=30, act_fn='ReLU', a_y=1.0, a_r=1.0, a_d=1.0, a_a=1, a_f=0.2, a_h=0.4, u_kl=1.0, ur_dim=3, ud_dim=4, h_dim=100, use_label=False, use_real=False, multi_u=False, run=8, gpu=0, normalize=True, dataset='law', retrain=False, path=True, path_attribute='SAT', test=True, tSNE=True, clf=True, balance=False, early_stop=True, rep=1, seed=8, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/DCEVAE/law_result/a_r_1.0_a_d_1.0_a_y_1.0_a_h_0.4_a_f_0.2_u_1.0_ur_3_ud_4_run_8_use_label_False')
+This code uses cuda

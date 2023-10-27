@@ -1,0 +1,1339 @@
+Namespace(n_epochs=2000, batch_size=256, lr=0.001, loss_fn='BCE', break_epoch=30, act_fn='Tanh', a_y=1.0, a_r=1.0, a_d=1.0, a_f=0.15, u_kl=1.0, u_dim=7, run=3, gpu=0, rep=0, use_label=False, use_real=False, normalize=True, path=False, path_attribute='GPA', retrain=True, debug=True, test=True, tSNE=True, clf=True, balance=False, early_stop=True, dataset='law', seed=3, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/CVAE/law_result/a_r_1.0_a_d_1.0_a_y_1.0_a_f_0.15_u_7_run_3_use_label_False')
+This code uses cuda
+Epoch 0
+###Train###
+BCE(x): 8.4903
+KL(u): 1.6009
+
+###Valid###
+BCE(x): 7.1842
+KL(s): 1.1961
+Epoch 1
+###Train###
+BCE(x): 6.6473
+KL(u): 1.1010
+
+###Valid###
+BCE(x): 5.5973
+KL(s): 1.0086
+Epoch 2
+###Train###
+BCE(x): 5.1743
+KL(u): 1.0746
+
+###Valid###
+BCE(x): 4.4143
+KL(s): 1.0753
+Epoch 3
+###Train###
+BCE(x): 4.2756
+KL(u): 1.1192
+
+###Valid###
+BCE(x): 3.8166
+KL(s): 1.0993
+Epoch 4
+###Train###
+BCE(x): 3.7523
+KL(u): 1.1308
+
+###Valid###
+BCE(x): 3.4545
+KL(s): 1.0928
+Epoch 5
+###Train###
+BCE(x): 3.4605
+KL(u): 1.1168
+
+###Valid###
+BCE(x): 3.2189
+KL(s): 1.0741
+Epoch 6
+###Train###
+BCE(x): 3.2626
+KL(u): 1.1091
+
+###Valid###
+BCE(x): 3.0500
+KL(s): 1.0428
+Epoch 7
+###Train###
+BCE(x): 3.1286
+KL(u): 1.0672
+
+###Valid###
+BCE(x): 2.9136
+KL(s): 1.0122
+Epoch 8
+###Train###
+BCE(x): 2.9908
+KL(u): 1.0151
+
+###Valid###
+BCE(x): 2.8416
+KL(s): 0.9615
+Epoch 9
+###Train###
+BCE(x): 2.8960
+KL(u): 0.9511
+
+###Valid###
+BCE(x): 2.7235
+KL(s): 0.8809
+Epoch 10
+###Train###
+BCE(x): 2.8211
+KL(u): 0.8672
+
+###Valid###
+BCE(x): 2.6476
+KL(s): 0.8274
+Epoch 11
+###Train###
+BCE(x): 2.7286
+KL(u): 0.7963
+
+###Valid###
+BCE(x): 2.5984
+KL(s): 0.7266
+Epoch 12
+###Train###
+BCE(x): 2.6662
+KL(u): 0.7052
+
+###Valid###
+BCE(x): 2.5466
+KL(s): 0.6517
+Epoch 13
+###Train###
+BCE(x): 2.6031
+KL(u): 0.6372
+
+###Valid###
+BCE(x): 2.4938
+KL(s): 0.5897
+Epoch 14
+###Train###
+BCE(x): 2.5476
+KL(u): 0.5820
+
+###Valid###
+BCE(x): 2.3981
+KL(s): 0.5595
+Epoch 15
+###Train###
+BCE(x): 2.4624
+KL(u): 0.5634
+
+###Valid###
+BCE(x): 2.3583
+KL(s): 0.5399
+Epoch 16
+###Train###
+BCE(x): 2.4208
+KL(u): 0.5526
+
+###Valid###
+BCE(x): 2.3068
+KL(s): 0.5421
+Epoch 17
+###Train###
+BCE(x): 2.3561
+KL(u): 0.5585
+
+###Valid###
+BCE(x): 2.2365
+KL(s): 0.5460
+Epoch 18
+###Train###
+BCE(x): 2.3159
+KL(u): 0.5698
+
+###Valid###
+BCE(x): 2.2083
+KL(s): 0.5585
+Epoch 19
+###Train###
+BCE(x): 2.2557
+KL(u): 0.5799
+
+###Valid###
+BCE(x): 2.1571
+KL(s): 0.5710
+Epoch 20
+###Train###
+BCE(x): 2.2081
+KL(u): 0.5993
+
+###Valid###
+BCE(x): 2.1010
+KL(s): 0.5888
+Epoch 21
+###Train###
+BCE(x): 2.1439
+KL(u): 0.6196
+
+###Valid###
+BCE(x): 2.0597
+KL(s): 0.6113
+Epoch 22
+###Train###
+BCE(x): 2.1062
+KL(u): 0.6435
+
+###Valid###
+BCE(x): 1.9970
+KL(s): 0.6371
+Epoch 23
+###Train###
+BCE(x): 2.0750
+KL(u): 0.6619
+
+###Valid###
+BCE(x): 1.9336
+KL(s): 0.6559
+Epoch 24
+###Train###
+BCE(x): 2.0457
+KL(u): 0.6849
+
+###Valid###
+BCE(x): 1.9018
+KL(s): 0.6773
+Epoch 25
+###Train###
+BCE(x): 2.0040
+KL(u): 0.6876
+
+###Valid###
+BCE(x): 1.9287
+KL(s): 0.6671
+Epoch 26
+###Train###
+BCE(x): 1.9843
+KL(u): 0.6967
+
+###Valid###
+BCE(x): 1.8928
+KL(s): 0.6929
+Epoch 27
+###Train###
+BCE(x): 1.9634
+KL(u): 0.7120
+
+###Valid###
+BCE(x): 1.8568
+KL(s): 0.6940
+Epoch 28
+###Train###
+BCE(x): 1.9415
+KL(u): 0.7135
+
+###Valid###
+BCE(x): 1.8759
+KL(s): 0.6899
+Epoch 29
+###Train###
+BCE(x): 1.9382
+KL(u): 0.7096
+
+###Valid###
+BCE(x): 1.8552
+KL(s): 0.6934
+Epoch 30
+###Train###
+BCE(x): 1.9188
+KL(u): 0.7253
+
+###Valid###
+BCE(x): 1.8243
+KL(s): 0.7089
+Epoch 31
+###Train###
+BCE(x): 1.9092
+KL(u): 0.7317
+
+###Valid###
+BCE(x): 1.8086
+KL(s): 0.7236
+Epoch 32
+###Train###
+BCE(x): 1.8849
+KL(u): 0.7321
+
+###Valid###
+BCE(x): 1.8321
+KL(s): 0.7109
+Epoch 33
+###Train###
+BCE(x): 1.8858
+KL(u): 0.7369
+
+###Valid###
+BCE(x): 1.8403
+KL(s): 0.7177
+Epoch 34
+###Train###
+BCE(x): 1.8749
+KL(u): 0.7421
+
+###Valid###
+BCE(x): 1.8052
+KL(s): 0.7240
+Epoch 35
+###Train###
+BCE(x): 1.8557
+KL(u): 0.7442
+
+###Valid###
+BCE(x): 1.8038
+KL(s): 0.7223
+Epoch 36
+###Train###
+BCE(x): 1.8539
+KL(u): 0.7406
+
+###Valid###
+BCE(x): 1.7896
+KL(s): 0.7265
+Epoch 37
+###Train###
+BCE(x): 1.8411
+KL(u): 0.7495
+
+###Valid###
+BCE(x): 1.7340
+KL(s): 0.7494
+Epoch 38
+###Train###
+BCE(x): 1.8280
+KL(u): 0.7663
+
+###Valid###
+BCE(x): 1.7531
+KL(s): 0.7452
+Epoch 39
+###Train###
+BCE(x): 1.8158
+KL(u): 0.7663
+
+###Valid###
+BCE(x): 1.7607
+KL(s): 0.7414
+Epoch 40
+###Train###
+BCE(x): 1.8164
+KL(u): 0.7670
+
+###Valid###
+BCE(x): 1.7438
+KL(s): 0.7503
+Epoch 41
+###Train###
+BCE(x): 1.8163
+KL(u): 0.7726
+
+###Valid###
+BCE(x): 1.7294
+KL(s): 0.7520
+Epoch 42
+###Train###
+BCE(x): 1.7998
+KL(u): 0.7771
+
+###Valid###
+BCE(x): 1.7254
+KL(s): 0.7528
+Epoch 43
+###Train###
+BCE(x): 1.7996
+KL(u): 0.7778
+
+###Valid###
+BCE(x): 1.7312
+KL(s): 0.7636
+Epoch 44
+###Train###
+BCE(x): 1.7835
+KL(u): 0.7909
+
+###Valid###
+BCE(x): 1.7370
+KL(s): 0.7705
+Epoch 45
+###Train###
+BCE(x): 1.7694
+KL(u): 0.7956
+
+###Valid###
+BCE(x): 1.7074
+KL(s): 0.7692
+Epoch 46
+###Train###
+BCE(x): 1.7585
+KL(u): 0.8036
+
+###Valid###
+BCE(x): 1.7038
+KL(s): 0.7659
+Epoch 47
+###Train###
+BCE(x): 1.7615
+KL(u): 0.8015
+
+###Valid###
+BCE(x): 1.6481
+KL(s): 0.7931
+Epoch 48
+###Train###
+BCE(x): 1.7405
+KL(u): 0.8118
+
+###Valid###
+BCE(x): 1.6622
+KL(s): 0.7972
+Epoch 49
+###Train###
+BCE(x): 1.7321
+KL(u): 0.8221
+
+###Valid###
+BCE(x): 1.6575
+KL(s): 0.7978
+Epoch 50
+###Train###
+BCE(x): 1.7180
+KL(u): 0.8277
+
+###Valid###
+BCE(x): 1.6559
+KL(s): 0.8004
+Epoch 51
+###Train###
+BCE(x): 1.7030
+KL(u): 0.8320
+
+###Valid###
+BCE(x): 1.6555
+KL(s): 0.8102
+Epoch 52
+###Train###
+BCE(x): 1.7044
+KL(u): 0.8313
+
+###Valid###
+BCE(x): 1.6338
+KL(s): 0.8056
+Epoch 53
+###Train###
+BCE(x): 1.7010
+KL(u): 0.8489
+
+###Valid###
+BCE(x): 1.6042
+KL(s): 0.8313
+Epoch 54
+###Train###
+BCE(x): 1.6850
+KL(u): 0.8425
+
+###Valid###
+BCE(x): 1.6248
+KL(s): 0.8077
+Epoch 55
+###Train###
+BCE(x): 1.6910
+KL(u): 0.8471
+
+###Valid###
+BCE(x): 1.5941
+KL(s): 0.8242
+Epoch 56
+###Train###
+BCE(x): 1.6756
+KL(u): 0.8544
+
+###Valid###
+BCE(x): 1.5855
+KL(s): 0.8425
+Epoch 57
+###Train###
+BCE(x): 1.6609
+KL(u): 0.8600
+
+###Valid###
+BCE(x): 1.6124
+KL(s): 0.8311
+Epoch 58
+###Train###
+BCE(x): 1.6502
+KL(u): 0.8609
+
+###Valid###
+BCE(x): 1.5831
+KL(s): 0.8323
+Epoch 59
+###Train###
+BCE(x): 1.6561
+KL(u): 0.8759
+
+###Valid###
+BCE(x): 1.5706
+KL(s): 0.8504
+Epoch 60
+###Train###
+BCE(x): 1.6450
+KL(u): 0.8705
+
+###Valid###
+BCE(x): 1.5745
+KL(s): 0.8506
+Epoch 61
+###Train###
+BCE(x): 1.6388
+KL(u): 0.8799
+
+###Valid###
+BCE(x): 1.5566
+KL(s): 0.8498
+Epoch 62
+###Train###
+BCE(x): 1.6422
+KL(u): 0.8744
+
+###Valid###
+BCE(x): 1.5845
+KL(s): 0.8411
+Epoch 63
+###Train###
+BCE(x): 1.6366
+KL(u): 0.8816
+
+###Valid###
+BCE(x): 1.5613
+KL(s): 0.8613
+Epoch 64
+###Train###
+BCE(x): 1.6127
+KL(u): 0.8918
+
+###Valid###
+BCE(x): 1.5452
+KL(s): 0.8653
+Epoch 65
+###Train###
+BCE(x): 1.6094
+KL(u): 0.9025
+
+###Valid###
+BCE(x): 1.5617
+KL(s): 0.8770
+Epoch 66
+###Train###
+BCE(x): 1.6027
+KL(u): 0.8989
+
+###Valid###
+BCE(x): 1.5442
+KL(s): 0.8676
+Epoch 67
+###Train###
+BCE(x): 1.6079
+KL(u): 0.9045
+
+###Valid###
+BCE(x): 1.5610
+KL(s): 0.8716
+Epoch 68
+###Train###
+BCE(x): 1.6008
+KL(u): 0.8964
+
+###Valid###
+BCE(x): 1.5361
+KL(s): 0.8749
+Epoch 69
+###Train###
+BCE(x): 1.5872
+KL(u): 0.9082
+
+###Valid###
+BCE(x): 1.5374
+KL(s): 0.8862
+Epoch 70
+###Train###
+BCE(x): 1.5878
+KL(u): 0.9078
+
+###Valid###
+BCE(x): 1.5087
+KL(s): 0.8860
+Epoch 71
+###Train###
+BCE(x): 1.5839
+KL(u): 0.9155
+
+###Valid###
+BCE(x): 1.5293
+KL(s): 0.8695
+Epoch 72
+###Train###
+BCE(x): 1.5903
+KL(u): 0.9165
+
+###Valid###
+BCE(x): 1.5270
+KL(s): 0.8886
+Epoch 73
+###Train###
+BCE(x): 1.5673
+KL(u): 0.9123
+
+###Valid###
+BCE(x): 1.5424
+KL(s): 0.8761
+Epoch 74
+###Train###
+BCE(x): 1.5686
+KL(u): 0.9164
+
+###Valid###
+BCE(x): 1.5181
+KL(s): 0.8868
+Epoch 75
+###Train###
+BCE(x): 1.5776
+KL(u): 0.9291
+
+###Valid###
+BCE(x): 1.4953
+KL(s): 0.9065
+Epoch 76
+###Train###
+BCE(x): 1.5688
+KL(u): 0.9348
+
+###Valid###
+BCE(x): 1.5028
+KL(s): 0.9050
+Epoch 77
+###Train###
+BCE(x): 1.5476
+KL(u): 0.9376
+
+###Valid###
+BCE(x): 1.5264
+KL(s): 0.8938
+Epoch 78
+###Train###
+BCE(x): 1.5612
+KL(u): 0.9314
+
+###Valid###
+BCE(x): 1.5110
+KL(s): 0.9057
+Epoch 79
+###Train###
+BCE(x): 1.5394
+KL(u): 0.9371
+
+###Valid###
+BCE(x): 1.5225
+KL(s): 0.8873
+Epoch 80
+###Train###
+BCE(x): 1.5595
+KL(u): 0.9331
+
+###Valid###
+BCE(x): 1.4692
+KL(s): 0.9082
+Epoch 81
+###Train###
+BCE(x): 1.5428
+KL(u): 0.9294
+
+###Valid###
+BCE(x): 1.5405
+KL(s): 0.8895
+Epoch 82
+###Train###
+BCE(x): 1.5511
+KL(u): 0.9326
+
+###Valid###
+BCE(x): 1.4977
+KL(s): 0.9056
+Epoch 83
+###Train###
+BCE(x): 1.5470
+KL(u): 0.9407
+
+###Valid###
+BCE(x): 1.4858
+KL(s): 0.9052
+Epoch 84
+###Train###
+BCE(x): 1.5425
+KL(u): 0.9429
+
+###Valid###
+BCE(x): 1.4529
+KL(s): 0.9147
+Epoch 85
+###Train###
+BCE(x): 1.5422
+KL(u): 0.9409
+
+###Valid###
+BCE(x): 1.4937
+KL(s): 0.9101
+Epoch 86
+###Train###
+BCE(x): 1.5435
+KL(u): 0.9466
+
+###Valid###
+BCE(x): 1.4913
+KL(s): 0.9173
+Epoch 87
+###Train###
+BCE(x): 1.5440
+KL(u): 0.9481
+
+###Valid###
+BCE(x): 1.4988
+KL(s): 0.9147
+Epoch 88
+###Train###
+BCE(x): 1.5356
+KL(u): 0.9487
+
+###Valid###
+BCE(x): 1.4964
+KL(s): 0.9179
+Epoch 89
+###Train###
+BCE(x): 1.5245
+KL(u): 0.9498
+
+###Valid###
+BCE(x): 1.4771
+KL(s): 0.9145
+Epoch 90
+###Train###
+BCE(x): 1.5330
+KL(u): 0.9513
+
+###Valid###
+BCE(x): 1.4987
+KL(s): 0.9124
+Epoch 91
+###Train###
+BCE(x): 1.5310
+KL(u): 0.9551
+
+###Valid###
+BCE(x): 1.4598
+KL(s): 0.9348
+Epoch 92
+###Train###
+BCE(x): 1.5235
+KL(u): 0.9582
+
+###Valid###
+BCE(x): 1.4523
+KL(s): 0.9218
+Epoch 93
+###Train###
+BCE(x): 1.5213
+KL(u): 0.9386
+
+###Valid###
+BCE(x): 1.4818
+KL(s): 0.9131
+Epoch 94
+###Train###
+BCE(x): 1.5256
+KL(u): 0.9491
+
+###Valid###
+BCE(x): 1.4926
+KL(s): 0.9124
+Epoch 95
+###Train###
+BCE(x): 1.5203
+KL(u): 0.9480
+
+###Valid###
+BCE(x): 1.4649
+KL(s): 0.9217
+Epoch 96
+###Train###
+BCE(x): 1.5224
+KL(u): 0.9516
+
+###Valid###
+BCE(x): 1.4521
+KL(s): 0.9225
+Epoch 97
+###Train###
+BCE(x): 1.5254
+KL(u): 0.9554
+
+###Valid###
+BCE(x): 1.4937
+KL(s): 0.9111
+Epoch 98
+###Train###
+BCE(x): 1.5344
+KL(u): 0.9473
+
+###Valid###
+BCE(x): 1.4614
+KL(s): 0.9199
+Epoch 99
+###Train###
+BCE(x): 1.5192
+KL(u): 0.9572
+
+###Valid###
+BCE(x): 1.4399
+KL(s): 0.9280
+Epoch 100
+###Train###
+BCE(x): 1.5246
+KL(u): 0.9512
+
+###Valid###
+BCE(x): 1.4758
+KL(s): 0.9087
+Epoch 101
+###Train###
+BCE(x): 1.5089
+KL(u): 0.9485
+
+###Valid###
+BCE(x): 1.4956
+KL(s): 0.9023
+Epoch 102
+###Train###
+BCE(x): 1.5221
+KL(u): 0.9459
+
+###Valid###
+BCE(x): 1.4513
+KL(s): 0.9327
+Epoch 103
+###Train###
+BCE(x): 1.5125
+KL(u): 0.9522
+
+###Valid###
+BCE(x): 1.4822
+KL(s): 0.9163
+Epoch 104
+###Train###
+BCE(x): 1.5209
+KL(u): 0.9567
+
+###Valid###
+BCE(x): 1.4897
+KL(s): 0.9274
+Epoch 105
+###Train###
+BCE(x): 1.5087
+KL(u): 0.9639
+
+###Valid###
+BCE(x): 1.4593
+KL(s): 0.9215
+Epoch 106
+###Train###
+BCE(x): 1.5133
+KL(u): 0.9684
+
+###Valid###
+BCE(x): 1.4730
+KL(s): 0.9286
+Epoch 107
+###Train###
+BCE(x): 1.5063
+KL(u): 0.9608
+
+###Valid###
+BCE(x): 1.4633
+KL(s): 0.9210
+Epoch 108
+###Train###
+BCE(x): 1.5119
+KL(u): 0.9684
+
+###Valid###
+BCE(x): 1.4642
+KL(s): 0.9215
+Epoch 109
+###Train###
+BCE(x): 1.5183
+KL(u): 0.9537
+
+###Valid###
+BCE(x): 1.4927
+KL(s): 0.9162
+Epoch 110
+###Train###
+BCE(x): 1.5140
+KL(u): 0.9590
+
+###Valid###
+BCE(x): 1.4258
+KL(s): 0.9333
+Epoch 111
+###Train###
+BCE(x): 1.5017
+KL(u): 0.9648
+
+###Valid###
+BCE(x): 1.4559
+KL(s): 0.9353
+Epoch 112
+###Train###
+BCE(x): 1.4947
+KL(u): 0.9685
+
+###Valid###
+BCE(x): 1.4887
+KL(s): 0.9243
+Epoch 113
+###Train###
+BCE(x): 1.4988
+KL(u): 0.9628
+
+###Valid###
+BCE(x): 1.4539
+KL(s): 0.9298
+Epoch 114
+###Train###
+BCE(x): 1.5037
+KL(u): 0.9675
+
+###Valid###
+BCE(x): 1.4216
+KL(s): 0.9362
+Epoch 115
+###Train###
+BCE(x): 1.5004
+KL(u): 0.9689
+
+###Valid###
+BCE(x): 1.4524
+KL(s): 0.9303
+Epoch 116
+###Train###
+BCE(x): 1.5036
+KL(u): 0.9601
+
+###Valid###
+BCE(x): 1.4829
+KL(s): 0.9254
+Epoch 117
+###Train###
+BCE(x): 1.5032
+KL(u): 0.9702
+
+###Valid###
+BCE(x): 1.4374
+KL(s): 0.9430
+Epoch 118
+###Train###
+BCE(x): 1.4900
+KL(u): 0.9650
+
+###Valid###
+BCE(x): 1.4679
+KL(s): 0.9299
+Epoch 119
+###Train###
+BCE(x): 1.5029
+KL(u): 0.9688
+
+###Valid###
+BCE(x): 1.4403
+KL(s): 0.9321
+Epoch 120
+###Train###
+BCE(x): 1.5043
+KL(u): 0.9620
+
+###Valid###
+BCE(x): 1.4398
+KL(s): 0.9247
+Epoch 121
+###Train###
+BCE(x): 1.5036
+KL(u): 0.9607
+
+###Valid###
+BCE(x): 1.4592
+KL(s): 0.9314
+Epoch 122
+###Train###
+BCE(x): 1.5000
+KL(u): 0.9683
+
+###Valid###
+BCE(x): 1.4397
+KL(s): 0.9435
+Epoch 123
+###Train###
+BCE(x): 1.4850
+KL(u): 0.9759
+
+###Valid###
+BCE(x): 1.4764
+KL(s): 0.9175
+Epoch 124
+###Train###
+BCE(x): 1.5010
+KL(u): 0.9556
+
+###Valid###
+BCE(x): 1.4543
+KL(s): 0.9302
+Epoch 125
+###Train###
+BCE(x): 1.5109
+KL(u): 0.9630
+
+###Valid###
+BCE(x): 1.4613
+KL(s): 0.9424
+Epoch 126
+###Train###
+BCE(x): 1.5021
+KL(u): 0.9742
+
+###Valid###
+BCE(x): 1.4461
+KL(s): 0.9393
+Epoch 127
+###Train###
+BCE(x): 1.4803
+KL(u): 0.9670
+
+###Valid###
+BCE(x): 1.4729
+KL(s): 0.9315
+Epoch 128
+###Train###
+BCE(x): 1.5011
+KL(u): 0.9663
+
+###Valid###
+BCE(x): 1.4158
+KL(s): 0.9393
+Epoch 129
+###Train###
+BCE(x): 1.4920
+KL(u): 0.9690
+
+###Valid###
+BCE(x): 1.4611
+KL(s): 0.9180
+Epoch 130
+###Train###
+BCE(x): 1.5020
+KL(u): 0.9631
+
+###Valid###
+BCE(x): 1.4266
+KL(s): 0.9340
+Epoch 131
+###Train###
+BCE(x): 1.4969
+KL(u): 0.9622
+
+###Valid###
+BCE(x): 1.4383
+KL(s): 0.9377
+Epoch 132
+###Train###
+BCE(x): 1.4927
+KL(u): 0.9672
+
+###Valid###
+BCE(x): 1.4379
+KL(s): 0.9265
+Epoch 133
+###Train###
+BCE(x): 1.4919
+KL(u): 0.9643
+
+###Valid###
+BCE(x): 1.4366
+KL(s): 0.9315
+Epoch 134
+###Train###
+BCE(x): 1.4973
+KL(u): 0.9679
+
+###Valid###
+BCE(x): 1.4040
+KL(s): 0.9346
+Epoch 135
+###Train###
+BCE(x): 1.5016
+KL(u): 0.9709
+
+###Valid###
+BCE(x): 1.3994
+KL(s): 0.9473
+Epoch 136
+###Train###
+BCE(x): 1.4802
+KL(u): 0.9668
+
+###Valid###
+BCE(x): 1.4650
+KL(s): 0.9290
+Epoch 137
+###Train###
+BCE(x): 1.4904
+KL(u): 0.9557
+
+###Valid###
+BCE(x): 1.4433
+KL(s): 0.9282
+Epoch 138
+###Train###
+BCE(x): 1.5091
+KL(u): 0.9632
+
+###Valid###
+BCE(x): 1.4548
+KL(s): 0.9341
+Epoch 139
+###Train###
+BCE(x): 1.4767
+KL(u): 0.9710
+
+###Valid###
+BCE(x): 1.4284
+KL(s): 0.9316
+Epoch 140
+###Train###
+BCE(x): 1.4978
+KL(u): 0.9673
+
+###Valid###
+BCE(x): 1.4093
+KL(s): 0.9463
+Epoch 141
+###Train###
+BCE(x): 1.4876
+KL(u): 0.9658
+
+###Valid###
+BCE(x): 1.4288
+KL(s): 0.9267
+Epoch 142
+###Train###
+BCE(x): 1.4827
+KL(u): 0.9700
+
+###Valid###
+BCE(x): 1.4386
+KL(s): 0.9347
+Epoch 143
+###Train###
+BCE(x): 1.4824
+KL(u): 0.9691
+
+###Valid###
+BCE(x): 1.4561
+KL(s): 0.9138
+Epoch 144
+###Train###
+BCE(x): 1.5054
+KL(u): 0.9518
+
+###Valid###
+BCE(x): 1.4231
+KL(s): 0.9324
+Epoch 145
+###Train###
+BCE(x): 1.4930
+KL(u): 0.9660
+
+###Valid###
+BCE(x): 1.4425
+KL(s): 0.9327
+Epoch 146
+###Train###
+BCE(x): 1.4729
+KL(u): 0.9746
+
+###Valid###
+BCE(x): 1.4415
+KL(s): 0.9256
+Epoch 147
+###Train###
+BCE(x): 1.4861
+KL(u): 0.9624
+
+###Valid###
+BCE(x): 1.4506
+KL(s): 0.9448
+Epoch 148
+###Train###
+BCE(x): 1.4850
+KL(u): 0.9618
+
+###Valid###
+BCE(x): 1.4386
+KL(s): 0.9307
+Epoch 149
+###Train###
+BCE(x): 1.4868
+KL(u): 0.9694
+
+###Valid###
+BCE(x): 1.4229
+KL(s): 0.9356
+Epoch 150
+###Train###
+BCE(x): 1.4918
+KL(u): 0.9696
+
+###Valid###
+BCE(x): 1.4445
+KL(s): 0.9369
+Epoch 151
+###Train###
+BCE(x): 1.4745
+KL(u): 0.9713
+
+###Valid###
+BCE(x): 1.4544
+KL(s): 0.9267
+Epoch 152
+###Train###
+BCE(x): 1.4775
+KL(u): 0.9707
+
+###Valid###
+BCE(x): 1.4498
+KL(s): 0.9216
+Epoch 153
+###Train###
+BCE(x): 1.4946
+KL(u): 0.9685
+
+###Valid###
+BCE(x): 1.4315
+KL(s): 0.9510
+Epoch 154
+###Train###
+BCE(x): 1.4799
+KL(u): 0.9760
+
+###Valid###
+BCE(x): 1.4360
+KL(s): 0.9283
+Epoch 155
+###Train###
+BCE(x): 1.4686
+KL(u): 0.9617
+
+###Valid###
+BCE(x): 1.4321
+KL(s): 0.9375
+Epoch 156
+###Train###
+BCE(x): 1.4800
+KL(u): 0.9650
+
+###Valid###
+BCE(x): 1.4350
+KL(s): 0.9233
+Epoch 157
+###Train###
+BCE(x): 1.4850
+KL(u): 0.9718
+
+###Valid###
+BCE(x): 1.4334
+KL(s): 0.9436
+Epoch 158
+###Train###
+BCE(x): 1.4770
+KL(u): 0.9787
+
+###Valid###
+BCE(x): 1.4542
+KL(s): 0.9373
+Epoch 159
+###Train###
+BCE(x): 1.4759
+KL(u): 0.9724
+
+###Valid###
+BCE(x): 1.4490
+KL(s): 0.9195
+Epoch 160
+###Train###
+BCE(x): 1.4743
+KL(u): 0.9584
+
+###Valid###
+BCE(x): 1.4062
+KL(s): 0.9348
+Epoch 161
+###Train###
+BCE(x): 1.4769
+KL(u): 0.9694
+
+###Valid###
+BCE(x): 1.4478
+KL(s): 0.9197
+Epoch 162
+###Train###
+BCE(x): 1.4933
+KL(u): 0.9627
+
+###Valid###
+BCE(x): 1.4536
+KL(s): 0.9303
+Epoch 163
+###Train###
+BCE(x): 1.4790
+KL(u): 0.9697
+
+###Valid###
+BCE(x): 1.4441
+KL(s): 0.9376
+Epoch 164
+###Train###
+BCE(x): 1.4949
+KL(u): 0.9670
+
+###Valid###
+BCE(x): 1.4281
+KL(s): 0.9480
+Epoch 165
+###Train###
+BCE(x): 1.4823
+KL(u): 0.9819
+
+###Valid###
+BCE(x): 1.4121
+KL(s): 0.9462
+time elapsed: 5.5554min
+best epoch for loss is 134
+
+Namespace(n_epochs=2000, batch_size=256, lr=0.001, loss_fn='BCE', break_epoch=30, act_fn='Tanh', a_y=1.0, a_r=1.0, a_d=1.0, a_f=0.15, u_kl=1.0, u_dim=7, run=3, gpu=0, rep=0, use_label=False, use_real=False, normalize=True, path=False, path_attribute='GPA', retrain=False, debug=True, test=True, tSNE=True, clf=True, balance=False, early_stop=True, dataset='law', seed=3, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/CVAE/law_result/a_r_1.0_a_d_1.0_a_y_1.0_a_f_0.15_u_7_run_3_use_label_False')
+This code uses cuda
+Namespace(n_epochs=2000, batch_size=256, lr=0.001, loss_fn='BCE', break_epoch=30, act_fn='Tanh', a_y=1.0, a_r=1.0, a_d=1.0, a_f=0.15, u_kl=1.0, u_dim=7, run=3, gpu=0, rep=0, use_label=False, use_real=False, normalize=True, path=True, path_attribute='GPA', retrain=False, debug=True, test=True, tSNE=True, clf=True, balance=False, early_stop=True, dataset='law', seed=3, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/CVAE/law_result/a_r_1.0_a_d_1.0_a_y_1.0_a_f_0.15_u_7_run_3_use_label_False')
+This code uses cuda
+Namespace(n_epochs=2000, batch_size=256, lr=0.001, loss_fn='BCE', break_epoch=30, act_fn='Tanh', a_y=1.0, a_r=1.0, a_d=1.0, a_f=0.15, u_kl=1.0, u_dim=7, run=3, gpu=0, rep=0, use_label=False, use_real=False, normalize=True, path=True, path_attribute='SAT', retrain=False, debug=True, test=True, tSNE=True, clf=True, balance=False, early_stop=True, dataset='law', seed=3, device='cuda', save_path='/users/PAS2334/zzz/CF_Fairness/CF_Representation/CVAE/law_result/a_r_1.0_a_d_1.0_a_y_1.0_a_f_0.15_u_7_run_3_use_label_False')
+This code uses cuda
