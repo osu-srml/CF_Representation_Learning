@@ -193,11 +193,18 @@ def generate_curve_data(loader, args, dataset="test"):
     model.to(device)
     model.eval()
     
-    i_f = torch.zeros((10000, 10)).to(device)
-    i_cf = torch.zeros((10000, 10)).to(device)
-    a_all = torch.zeros((10000, 1)).to(device)
-    i_real = torch.zeros((10000, 10)).to(device)
-    u = torch.zeros((10000, args.ur_dim + args.ud_dim))
+    if args.dataset == "law":
+        i_f = torch.zeros((10000, 10)).to(device)
+        i_cf = torch.zeros((10000, 10)).to(device)
+        a_all = torch.zeros((10000, 1)).to(device)
+        i_real = torch.zeros((10000, 10)).to(device)
+        u = torch.zeros((10000, args.ur_dim + args.ud_dim))
+    else:
+        i_f = torch.zeros((10000, 9)).to(device)
+        i_cf = torch.zeros((10000, 9)).to(device)
+        a_all = torch.zeros((10000, 1)).to(device)
+        i_real = torch.zeros((10000, 9)).to(device)
+        u = torch.zeros((10000, args.ur_dim + args.ud_dim))
     with torch.no_grad():
         for idx, (r, d, a, y, r2, d2, a2, y2) in enumerate(loader):
             if idx == 0:

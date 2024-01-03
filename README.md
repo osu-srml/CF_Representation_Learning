@@ -43,7 +43,7 @@ python3 main.py --dataset law --a_y 1 --a_r 1 --a_d 1 --a_f 0.15 --u_kl 1 --n_ep
 For the experiments with path dependent counterfactual fairness, you need to add ```--path True``` and ```--path_attribute attr``` in the command. For the law school dataset, attr should be ```GPA``` or ```SAT```. And for the UCI dataset, attr should be ```0``` for ```workingclass``` and ```1``` for ```education```.
 
 ******************************************************************************
-The detailed experiment results are stored in ```CF Data Record.xlsx```. You can also find the comman (including the random seed) used to get the results.
+The detailed experiment results are stored in ```CF Data Record.xlsx```. You can also find the command (including the random seed) used to get the results.
 
 To get the Figure 5 and 9 shown in the paper, run
 ```sh

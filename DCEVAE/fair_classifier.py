@@ -430,8 +430,12 @@ def l2_classifier(args, logger):
     #y_factual = test_pred
     #y_counter = test_pred
     test_dat = np.load(os.path.join(args.save_path, "test_curve.npz"))
-    curve_factual = np.concatenate([test_dat["u"], test_dat["input"][:, :8]], 1)
-    curve_counter = np.concatenate([test_dat["u"], test_dat["input"][:, :8]], 1)
+    if args.dataset == "law":
+        curve_factual = np.concatenate([test_dat["u"], test_dat["input"][:, :8]], 1)
+        curve_counter = np.concatenate([test_dat["u"], test_dat["input"][:, :8]], 1)
+    else:
+        curve_factual = np.concatenate([test_dat["u"], test_dat["input"][:, :3]], 1)
+        curve_counter = np.concatenate([test_dat["u"], test_dat["input"][:, :3]], 1)
     y_factual = clf.predict(curve_factual)
     y_counter = clf.predict(curve_counter)
     print("save path = {}".format(args.save_path))
@@ -597,8 +601,12 @@ def avg_classifier(args, logger):
         cf_eval(r, y_factual, y_counter, a, args)
         
         test_dat = np.load(os.path.join(args.save_path, "test_curve.npz"))
-        curve_factual = np.concatenate([test_dat["u"], test_dat["input"][:, :8], (test_dat["input"][:, 8:] + test_dat["input_cf"][:, 8:]) / 2], 1)
-        curve_counter = np.concatenate([test_dat["u"], test_dat["input"][:, :8], (test_dat["input_cf"][:, 8:] + test_dat["input"][:, 8:]) / 2], 1)
+        if args.dataset == "law":
+            curve_factual = np.concatenate([test_dat["u"], test_dat["input"][:, :8], (test_dat["input"][:, 8:] + test_dat["input_cf"][:, 8:]) / 2], 1)
+            curve_counter = np.concatenate([test_dat["u"], test_dat["input"][:, :8], (test_dat["input_cf"][:, 8:] + test_dat["input"][:, 8:]) / 2], 1)
+        else:
+            curve_factual = np.concatenate([test_dat["u"], test_dat["input"][:, :3], (test_dat["input"][:, 3:] + test_dat["input_cf"][:, 3:]) / 2], 1)
+            curve_counter = np.concatenate([test_dat["u"], test_dat["input"][:, :3], (test_dat["input_cf"][:, 3:] + test_dat["input"][:, 3:]) / 2], 1)
         y_factual = clf.predict(curve_factual)
         y_counter = clf.predict(curve_counter)
         np.save(os.path.join(args.save_path, "{}_ours_factual".format(args.use_real)), y_factual)
