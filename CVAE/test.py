@@ -166,10 +166,10 @@ def generate_curve_data(loader, args, dataset="test"):
     model.eval()
     
     if args.dataset == "law":
-        i_f = torch.zeros((10000, 9)).to(device)
-        i_cf = torch.zeros((10000, 9)).to(device)
+        i_f = torch.zeros((10000, 10)).to(device)
+        i_cf = torch.zeros((10000, 10)).to(device)
         a_all = torch.zeros((10000, 1)).to(device)
-        i_real = torch.zeros((10000, 9)).to(device)
+        i_real = torch.zeros((10000, 10)).to(device)
         u = torch.zeros((10000, args.u_dim))
     else:
         i_f = torch.zeros((10000, 9)).to(device)
