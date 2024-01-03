@@ -14,7 +14,7 @@ For the ```I-DCEVAE``` baseline, you should run
 python3 main.py --use_label True --use_real True  --run 1
 ```
 
-For the ```CE``` baseline and our method, the comman is
+For the ```CE``` baseline and our method, the command is
 ```sh
 python3 main.py --a_f 0.0 --u_kl 0.5 --a_h 0.1  --run 1
 ```
